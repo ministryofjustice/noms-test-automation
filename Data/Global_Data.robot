@@ -14,3 +14,5 @@ ${INVALID_USER} =   IncorrectUser
 
 
 &{SEARCH_VALUES}    a=*     b=%     c=#
+
+&{SEARCH_RESULTS}    a=Alderton, John   b=Balog, Igor

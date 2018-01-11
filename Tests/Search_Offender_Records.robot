@@ -31,9 +31,18 @@ Scenario 3: Validate That No Record Is Returned When [Search] For Offender With 
     And Selects [Search] Button
     Then Check That [400] Error Status Code Is Returned
 
-Scenario 4: Check That All Records Are Returned When [Search] For Offender With Invalid "#" Character
+#TODO: The scenario below could possibly be a bug. Team to confirm
+Scenario 4: Check That All Records Are Returned When [Search] For Offender With "#" Character
     [Tags]  [JIRA: EA-8]
     Given Admin User Logs Into [NOMIS]
     When Enters [#] Character Into [Search] Field
     And Selects [Search] Button
-    Then C
+    Then Check That Offenders List Is Returned
+
+Scenario 5: Check That All Records Are Returned When [Search] For Offender Without Data In Search Field
+    [Tags]  [JIRA: EA-8]
+    Given Admin User Logs Into [NOMIS]
+    When Selects [Leeds] From Location Dropdown Menu
+    And Selects [Search] Button
+    Then Check That Offenders List Is Returned
+

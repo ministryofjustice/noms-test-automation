@@ -36,3 +36,12 @@ Check That [400] Error Status Code Is Returned
 Enters [#] Character Into [Search] Field
     LoginPage.Wait For Page Ready     ${SEARCH_BOX}
     SearchOffenderRecords.Enter Search Value  ${SEARCH_VALUES.c}
+
+Check That Offenders List Is Returned
+    SearchOffenderRecords.Search "Result" Returned With Offender
+    SearchOffenderRecords.Second Offender Search "Result" In The List
+
+Selects [Leeds] From Location Dropdown Menu
+    SearchOffenderRecords.Select "Location" Dropdown
+    SearchOffenderRecords.Select "LEEDS" From Dropdown
+

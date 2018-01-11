@@ -31,9 +31,6 @@ Enter Search Value
     [arguments]  ${injection_value}
     input text  ${SEARCH_BOX}  ${injection_value}
 
-Enter Whithdrawal Value
-    [arguments]   ${whithdrawal_value}
-    input text  ${WITHDRAWAL_BOX}  ${whithdrawal_value}
 
 Wait Until Page Is Fully Loaded
     Wait for Ajax
