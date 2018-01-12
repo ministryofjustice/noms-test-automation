@@ -39,10 +39,39 @@ Scenario 4: Check That All Records Are Returned When [Search] For Offender With 
     And Selects [Search] Button
     Then Check That Offenders List Is Returned
 
-Scenario 5: Check That All Records Are Returned When [Search] For Offender Without Data In Search Field
+Scenario 5: Check All Records Returned When [Search] For Offender With no Data In Search Box But With Specific [Location]
     [Tags]  [JIRA: EA-8]
     Given Admin User Logs Into [NOMIS]
     When Selects [Leeds] From Location Dropdown Menu
     And Selects [Search] Button
     Then Check That Offenders List Is Returned
 
+Scenario 6: Validate That Offender Details Page Displays When Search By Offender's [Surname]
+    [Tags]  [JIRA: EA-8]
+    Given Admin User Logs Into [NOMIS]
+    When Enters Offender's [Surname] Into The [Search] Field
+    And Selects [Search] Button
+    Then Check That Offender's Details Page Displays
+
+Scenario 7: Check That No Record Is Returned When Search By Offender's [First Name]
+    [Tags]  [JIRA: EA-8]
+    Given Admin User Logs Into [NOMIS]
+    When Enters Offender's [First Name] Into The [Search] Field
+    And Selects [Search] Button
+    Then Check That No Matching Record Message Is Returned
+
+Scenario 8: Check [404] Status Code Is Returned When [Search] For Offender With Invalid Data "+" Regardless Of [Location]
+    [Tags]  [JIRA: EA-8]
+    Given Admin User Logs Into [NOMIS]
+    When Enters [+] Into The [Search] Field
+    And Selects [Leeds] From Location Dropdown Menu
+    When Selects [Search] Button
+    Then Check That [404] Error Status Code Is Returned
+
+Scenario 9: Validate [Offender Details] Page Returns When Search By Offender's Valid [Surname] At A Specific [Location]
+    [Tags]  [JIRA: EA-8]
+    Given Admin User Logs Into [NOMIS]
+    When Enters Offender's [Surname] Into The [Search] Field
+    And Selects [Leeds] From Location Dropdown Menu
+    When Selects [Search] Button
+    Then Check That Offender's Details Page Displays

@@ -11,6 +11,8 @@ ${FIRST_SEARCH_RESULTS} =   //span[contains(.//text(), '${SEARCH_RESULTS.a}')]/d
 ${SECOND_IN_SEARCH_RESULTS_LIST} =   //span[contains(.//text(), '${SEARCH_RESULTS.b}')]/div/span
 ${LOCATION_FIELD} =   name=locationPrefix
 ${LEEDS} =      //select[@name='locationPrefix']/option[.='LEEDS (HMP)']
+${OFFENDER_DETAILS_PAGE} =      //div[contains(.//text(), 'Offender details')]
+${404_ERROR_STATUS_CODE} =   //div[contains(.//text(), 'Request failed with status code 404')]
 
 *** Keywords ***
 
@@ -30,6 +32,9 @@ No Matching Message Displays
 Error "400" Status Code Displays
     Page Should Contain Element    ${ERROR_STATUS_CODE}
 
+Error "404" Status Code Displays
+    Page Should Contain Element    ${404_ERROR_STATUS_CODE}
+
 Search "Result" Returned With Offender
     Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${FIRST_SEARCH_RESULTS}
 
@@ -42,4 +47,6 @@ Select "Location" Dropdown
 Select "LEEDS" From Dropdown
     Wait Until Keyword Succeeds  10  0  Click Element   ${LEEDS}
 
+Offender Details Page Displays
+    Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${OFFENDER_DETAILS_PAGE}
 

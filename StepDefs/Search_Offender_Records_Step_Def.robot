@@ -45,3 +45,20 @@ Selects [Leeds] From Location Dropdown Menu
     SearchOffenderRecords.Select "Location" Dropdown
     SearchOffenderRecords.Select "LEEDS" From Dropdown
 
+Enters Offender's [Surname] Into The [Search] Field
+    LoginPage.Wait For Page Ready     ${SEARCH_BOX}
+    SearchOffenderRecords.Enter Search Value  ${SEARCH_RESULTS.offenderSurname}
+
+Check That Offender's Details Page Displays
+    SearchOffenderRecords.Offender Details Page Displays
+
+Enters Offender's [First Name] Into The [Search] Field
+    LoginPage.Wait For Page Ready     ${SEARCH_BOX}
+    SearchOffenderRecords.Enter Search Value  ${SEARCH_RESULTS.offenderFirstName}
+
+Enters [+] Into The [Search] Field
+    LoginPage.Wait For Page Ready     ${SEARCH_BOX}
+    SearchOffenderRecords.Enter Search Value  ${SEARCH_VALUES.d}
+
+Check That [404] Error Status Code Is Returned
+    SearchOffenderRecords.Error "404" Status Code Displays

@@ -13,6 +13,6 @@ ${INVALID_USER} =   IncorrectUser
 
 
 
-&{SEARCH_VALUES}    a=*     b=%     c=#
+&{SEARCH_VALUES}    a=*     b=%     c=#     d=+
 
-&{SEARCH_RESULTS}    a=Alderton, John   b=Balog, Igor
+&{SEARCH_RESULTS}    a=Alderton, John   b=Balog, Igor   offenderSurname=Alderton    offenderFirstName=John
