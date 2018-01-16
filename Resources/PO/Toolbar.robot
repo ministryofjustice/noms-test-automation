@@ -11,6 +11,7 @@ ${HAMBURGER} =  //span[contains(.//text(), '(HMP)')]
 ${LOGOUT_BUTTON} =  //a[contains(., 'Log out')]
 
 ${HOME_W} =  //h1[contains(.//text(), '')]
+${HMPPS_HOME} =  //a[contains(.//text(), 'HMPPS')]
 
 *** Keywords ***
 
@@ -28,3 +29,6 @@ Welcome User
     ${hello_user} =  Get Text     ${HOME_W}
     Log To Console  ${hello_user}
     Set Suite Variable  ${hello_user}
+
+Select Breadcrumb
+    Click Element   ${HMPPS_HOME}

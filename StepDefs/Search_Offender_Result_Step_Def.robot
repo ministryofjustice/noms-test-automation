@@ -27,3 +27,19 @@ Selects [Offender]
 
 [Offender] Details Tab Displays
     SearchOffenderResults.Offender Details Tab Displays
+
+Selects [Grid] View Option
+    SearchOffenderResults.Select "Grid" View
+
+Check That [Sort By Name] Option Displays
+    SearchOffenderResults.Sort By Names Displays
+
+Selects [List] View Option
+    SearchOffenderResults.Select "List" View
+
+Validate [Sort By Name] Option Is No Longer Display
+    SearchOffenderResults.Sort By Names No Longer Display
+
+Home Page Displays If Breadcrumb Is Selected
+    Toolbar.Select Breadcrumb
+    Toolbar.Check User Is On The "Home" Page
