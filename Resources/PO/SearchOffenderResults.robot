@@ -44,3 +44,9 @@ Sort By Names No Longer Display
     Wait Until Keyword Succeeds  10  0  Page Should Not Contain Element    ${SORT_BY}
     Page Should Not Contain Element    ${A_TO_Z}
     Page Should Not Contain Element    ${Z_TO_A}
+
+Check "Grid" Toggle Link Is Available
+    Wait Until Keyword Succeeds  10  0  Page Should Contain Element   ${GRID_VIEW}
+
+Check "List" Toggle Link Is Available
+    Wait Until Keyword Succeeds  10  0  Page Should Contain Element   ${LIST_VIEW}

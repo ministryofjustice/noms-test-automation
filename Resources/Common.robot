@@ -11,6 +11,7 @@ Resource  ../Resources/Login.robot
 #Resource  ../Resources/PO/Dashboard.robot
 Resource  ../Resources/PO/SearchOffenderRecords.robot
 Resource  ../Resources/PO/SearchOffenderResults.robot
+Resource  ../Resources/PO/ViewAssignments.robot
 
 *** Variables ***
 

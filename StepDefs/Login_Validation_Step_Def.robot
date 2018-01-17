@@ -9,7 +9,8 @@ User Enters Incorrect Credentials To Login Into [NOMIS]
     Login.Login With Incorrect Credentials
 
 Check That User Can Log Out Successfully
-   Login.Log Out All Users
+   Toolbar.Select User Profile Dropdown
+   Toolbar.Logout Of App
 
 User Attempts To Login With Valid [Username] & Invalid [Password]
     Login.Login With Valid "Username" & Incorrect "Password"
