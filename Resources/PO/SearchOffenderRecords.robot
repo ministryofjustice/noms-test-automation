@@ -50,3 +50,6 @@ Select "LEEDS" From Dropdown
 Offender Details Page Displays
     Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${OFFENDER_DETAILS_PAGE}
 
+Search "Result" Does Not Return With Offender
+    Sleep  10s
+    Page Should Not Contain Element    ${FIRST_SEARCH_RESULTS}

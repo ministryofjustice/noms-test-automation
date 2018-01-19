@@ -62,3 +62,6 @@ Enters [+] Into The [Search] Field
 
 Check That [404] Error Status Code Is Returned
     SearchOffenderRecords.Error "404" Status Code Displays
+
+Check That Offenders List Is Not Returned
+    SearchOffenderRecords.Search "Result" Does Not Return With Offender
