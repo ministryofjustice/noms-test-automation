@@ -8,6 +8,8 @@ ${BROWSER} =  ff
 ${START_URL}=  https://notm-dev.hmpps.dsd.io/login
 ${VALID_ADMIN_USER} =  ZHAMMED
 ${VALID_ADMIN_PASSWORD} =  password123
+${VALID_KEYWORKER_USER} =  DBULL_KEYWORKER
+${VALID_KEYWORKER_PASSWORD} =  password123456
 ${INVALID_PWORD} =  123456789@ttn
 ${INVALID_USER} =   IncorrectUser
 

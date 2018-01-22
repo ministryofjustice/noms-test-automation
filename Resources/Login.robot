@@ -56,3 +56,9 @@ Login Valid User
     EnterUserName  ${VALID_ADMIN_USER}
     EnterPassword  ${VALID_ADMIN_PASSWORD}
     LoginPage.Credentials
+
+Login As Keyworker User
+    Load Login Page
+    EnterUserName  ${VALID_KEYWORKER_USER}
+    EnterPassword  ${VALID_KEYWORKER_PASSWORD}
+    LoginPage.Credentials

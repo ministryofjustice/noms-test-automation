@@ -3,8 +3,8 @@ Resource   ../Resources/Common.robot
 
 *** Keywords ***
 
-Admin User Logs Into [NOMIS]
-    Login.Login Valid User
+Keyworker User Logs Into [NOMIS]
+    Login.Login As Keyworker User
 
 [Nomis] Home Page Displays
     Toolbar.Check User Is On The "Home" Page

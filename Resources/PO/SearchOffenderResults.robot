@@ -21,7 +21,6 @@ Offender Search Results Page Displays
 Check The Table Column Headers Are Correct
 	[Arguments]  ${name}  ${id}  ${iep}  ${age}  ${location}
 	Wait Until Keyword Succeeds  10  0  Page Should Contain Element  ${OFFENDER_SEARCH_RESULT_TABLE}
-#	//div[ contains(@id,'PG${group name}')]/div[1+${row in group}]/div[text()[contains(.,'${unit name}')]]
 
 Select Offender "Alderton"
     Wait Until Keyword Succeeds  10  0  Click Element  ${OFFENDER_ALDERTON}
