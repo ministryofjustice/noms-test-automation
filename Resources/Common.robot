@@ -8,12 +8,10 @@ Resource  ../Data/Global_Data.robot
 Resource  ../Resources/PO/Toolbar.robot
 Resource  ../Resources/PO/LoginPage.robot
 Resource  ../Resources/Login.robot
-#Resource  ../Resources/PO/Dashboard.robot
 Resource  ../Resources/PO/SearchOffenderRecords.robot
 Resource  ../Resources/PO/SearchOffenderResults.robot
 Resource  ../Resources/PO/ViewAssignments.robot
-
-*** Variables ***
+Resource  ../Resources/PO/ViewOffenderHeaderRecord.robot
 
 
 
@@ -22,7 +20,7 @@ Resource  ../Resources/PO/ViewAssignments.robot
 
 
 Begin Web Test
-    Open Browser  about:blank  ${BROWSER}
+    Open Browser  about:blank  ${BROWSER}   remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES}
 #    Maximize Browser Window
 
 End Web Test

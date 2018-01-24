@@ -2,7 +2,6 @@
 Documentation    As a prison officer, i want to see search results page when i search for offenders
                  ...  so that i know who the prisoners are.
 Resource  ../StepDefs/Search_Offender_Result_Step_Def.robot
-Resource  ./../Resources/Common.robot
 
 Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
