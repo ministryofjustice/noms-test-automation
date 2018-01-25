@@ -3,6 +3,7 @@ Documentation  This is the common keyword file holding keywords to elements of t
 
 
 Library  Selenium2Library
+Library  OperatingSystem
 
 Resource  ../Data/Global_Data.robot
 Resource  ../Resources/PO/Toolbar.robot
@@ -18,6 +19,8 @@ Resource  ../Resources/PO/ViewOffenderHeaderRecord.robot
 
 *** Keywords ***
 
+Setup chromedriver
+  Set Environment Variable  webdriver.geckodriver.driver  ./${EXECDIR}/StandAloneDrivers/geckodriver
 
 Begin Web Test
     Open Browser  about:blank  ${BROWSER}   remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES}
