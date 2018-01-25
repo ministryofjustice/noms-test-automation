@@ -99,7 +99,6 @@ jobs:
       - run:
           name: "Extract the file"
           command: |
-#            tar -xvzf geckodriver*
             sh -c 'tar -x geckodriver -zf geckodriver-v0.19.1-linux32.tar.gz -O > /usr/bin/geckodriver'
 
       - run:
