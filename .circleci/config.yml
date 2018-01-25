@@ -11,6 +11,7 @@
 ##          name: Download Selenium
 ##          command: |
 ##            curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
+#              https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.19.1-linux32.tar.gz
 ##      - run:
 ##          name: Start Selenium
 ##          command: |
@@ -89,6 +90,25 @@ jobs:
           name: "Install Selenium2Library"
           command: |
             pip install robotframework-Selenium2Library==1.8 --user
+
+#      - run:
+#          name: "Download Geckodriver"
+#          command: |
+#            curl -https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.19.1-linux32.tar.gz
+#
+#      - run:
+#          name: "E Geckodriver"
+#          command: |
+#            curl -https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.19.1-linux32.tar.gz
+
+      - run:
+         name:"Download Firefox"
+         command:
+          sudo apt-get update
+          sudo apt-get install libpango1.0-0
+          sudo apt-get install firefox
+          sudo ln -sf /usr/lib/firefox/firefox /usr/bin/firefox
+
 
       - run:
           command: |

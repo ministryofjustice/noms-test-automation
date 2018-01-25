@@ -19,12 +19,23 @@ Resource  ../Resources/PO/ViewOffenderHeaderRecord.robot
 
 *** Keywords ***
 
-Setup gecko driver
-  Set Environment Variable  webdriver.geckodriver.driver  ./${EXECDIR}/StandAloneDrivers/geckodriver
+#Setup gecko driver
+#  Set Environment Variable  webdriver.geckodriver.driver  ./${EXECDIR}/StandAloneDrivers/geckodriver  -headless
+
+Firefox true headless
+  ${firefox options}=     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
+  Call Method    ${firefox options}   add_argument    -headless
+  Create Webdriver    Firefox    firefox_options=${firefox options}
+  Set Window Size    1920    1080
+#  Go To    ${PAGE URL}
 
 Begin Web Test
-    Setup gecko driver
-    Open Browser  about:blank  ${BROWSER}   remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES}
+#    Setup gecko driver
+
+    Firefox true headless
+#    Open Browser  about:blank  ${BROWSER}   ./${EXECDIR}/StandAloneDrivers/geckodriver  -headless
+
+#    remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES}
 #    Maximize Browser Window
 
 End Web Test
