@@ -104,13 +104,11 @@ jobs:
       - run:
           name: "Make it executable"
           command: |
-#            chmod +x geckodriver
             chmod +x /usr/bin/geckodriver
 
       - run:
           name: "Add driver to PATH"
           command: |
-#            mv geckodriver /usr/local/bin/
             rm geckodriver-v0.19.1-linux32.tar.gz
 
 #      - run:
