@@ -105,7 +105,7 @@ jobs:
       - run:
           name: "Make it executable"
           command: |
-            chmod +x /usr/local/bin/geckodriver
+            sudo chmod +x /usr/local/bin/geckodriver
 
       - run:
           name: "Add driver to PATH"
