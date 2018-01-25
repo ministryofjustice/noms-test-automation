@@ -4,7 +4,7 @@ Documentation    Global data file for test agnostic data
 
 *** Variables ***
 
-${BROWSER} =  ff
+#${BROWSER} =  ff
 ${BROWSER} =  phantomjs
 ${START_URL}=  https://notm-dev.hmpps.dsd.io/login
 ${REMOTE_URL}
