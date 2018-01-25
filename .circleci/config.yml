@@ -115,17 +115,17 @@ jobs:
       - run:
           name: "Download Browser"
           command: |
-            sudo add-apt-repository ppa:mozillateam/firefox-next
-
-      - run:
-          name: "Update Browser"
-          command: |
-            sudo apt-get update
-
-      - run:
-          name: "Install Browser"
-          command: |
-            sudo apt-get install firefox
+            su && add-apt-repository ppa:mozillateam/firefox-next && apt-get update && apt-get install -y firefox
+#TODO: Attempting to install firefox browser with one liner
+#      - run:
+#          name: "Update Browser"
+#          command: |
+#            sudo apt-get update
+#
+#      - run:
+#          name: "Install Browser"
+#          command: |
+#            sudo apt-get install firefox
 
       - run:
           command: |
