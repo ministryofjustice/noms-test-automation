@@ -22,7 +22,7 @@ ${INVALID_USER} =   IncorrectUser
 #&{CHROME_OPTIONS}       args=@{CHROME_ARGS}
 #&{CAPABILITIES}         chromeOptions=&{CHROME_OPTIONS}
 
-&{firefox options}       args=@{FIREFOX_ARGS}
+#&{firefox options}       args=@{FIREFOX_ARGS}
 
 
 

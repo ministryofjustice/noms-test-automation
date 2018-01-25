@@ -27,15 +27,12 @@ Firefox true headless
   Call Method    ${firefox options}   add_argument    -headless
   Create Webdriver    Firefox    firefox_options=${firefox options}
   Set Window Size    1920    1080
-#  Go To    ${PAGE URL}
 
 Begin Web Test
 #    Setup gecko driver
 
     Firefox true headless
-#    Open Browser  about:blank  ${BROWSER}   ./${EXECDIR}/StandAloneDrivers/geckodriver  -headless
-
-#    remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES}
+#    Open Browser  about:blank  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES} -headless
 #    Maximize Browser Window
 
 End Web Test

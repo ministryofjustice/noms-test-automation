@@ -112,15 +112,20 @@ jobs:
           command: |
             rm geckodriver-v0.19.1-linux32.tar.gz
 
-#      - run:
-#         name: "Download Firefox"
-#         command:
-#          apt-get update
-#          apt-get install libpango1.0-0
-#          apt-get install firefox
-#          - bash scripts/get-latest-firefox.sh
-#          ln sf /usr/lib/firefox/firefox /usr/bin/firefox
+      - run:
+          name: "Download Browser"
+          command: |
+            sudo add-apt-repository ppa:mozillateam/firefox-next
 
+      - run:
+          name: "Update Browser"
+          command: |
+            sudo apt-get update
+
+      - run:
+          name: "Install Browser"
+          command: |
+            sudo apt-get install firefox
 
       - run:
           command: |
