@@ -11,7 +11,6 @@
 ##          name: Download Selenium
 ##          command: |
 ##            curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
-#              https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.19.1-linux32.tar.gz
 ##      - run:
 ##          name: Start Selenium
 ##          command: |
@@ -91,24 +90,34 @@ jobs:
           command: |
             pip install robotframework-Selenium2Library==1.8 --user
 
-#      - run:
-#          name: "Download Geckodriver"
-#          command: |
-#            curl -https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.19.1-linux32.tar.gz
-#
-#      - run:
-#          name: "E Geckodriver"
-#          command: |
-#            curl -https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.19.1-linux32.tar.gz
+      - run:
+          name: "Download Geckodriver"
+          command: |
+            curl -https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.19.1-linux32.tar.gz
 
       - run:
-         name: "Download Firefox"
-         command:
-          apt-get update
-          apt-get install libpango1.0-0
-          apt-get install firefox
-          - bash scripts/get-latest-firefox.sh
-          ln - sf /usr/lib/firefox/firefox /usr/bin/firefox
+          name: "Extract the file"
+          command: |
+            tar -xvzf geckodriver*
+
+      - run:
+          name: "Make it executable"
+          command: |
+            chmod +x geckodriver
+
+      - run:
+          name: "Add driver to PATH"
+          command: |
+            mv geckodriver /usr/local/bin/
+
+#      - run:
+#         name: "Download Firefox"
+#         command:
+#          apt-get update
+#          apt-get install libpango1.0-0
+#          apt-get install firefox
+#          - bash scripts/get-latest-firefox.sh
+#          ln sf /usr/lib/firefox/firefox /usr/bin/firefox
 
 
       - run:
