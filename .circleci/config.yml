@@ -94,7 +94,7 @@ jobs:
       - run:
           name: "Download Geckodriver"
           command: |
-            wget https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.19.1-linux32.tar.gz
+            wget https://github.com/mozilla/geckodriver/releases/geckodriver-v0.19.1-linux32.tar
 
       - run:
           name: "Extract the file"
