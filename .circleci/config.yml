@@ -101,14 +101,13 @@ jobs:
 #          command: |
 #            curl -https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.19.1-linux32.tar.gz
 
-#TODO: Enable this later
-#      - run:
-#         name: "Download Firefox"
-#         command:
-##          apt-get update
-#          apt-get install libpango1.0-0
-#          apt-get install firefox
-#          ln /usr/lib/firefox/firefox /usr/bin/firefox
+      - run:
+         name: "Download Firefox"
+         command:
+          apt-get update
+          apt-get install libpango1.0-0
+          apt-get install firefox
+          ln -s /usr/lib/firefox/firefox /usr/bin/firefox
 
 
       - run:
