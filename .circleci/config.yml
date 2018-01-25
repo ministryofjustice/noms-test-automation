@@ -90,25 +90,29 @@ jobs:
           command: |
             pip install robotframework-Selenium2Library==1.8 --user
 
+# TODO : Dry run For testing purpose
       - run:
           name: "Download Geckodriver"
           command: |
-            curl -https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.19.1-linux32.tar.gz
+            wget https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.19.1-linux32.tar.gz
 
       - run:
           name: "Extract the file"
           command: |
-            tar -xvzf geckodriver*
+#            tar -xvzf geckodriver*
+            sh -c 'tar -x geckodriver -zf geckodriver-v0.19.1-linux32.tar.gz -O > /usr/bin/geckodriver'
 
       - run:
           name: "Make it executable"
           command: |
-            chmod +x geckodriver
+#            chmod +x geckodriver
+            chmod +x /usr/bin/geckodriver
 
       - run:
           name: "Add driver to PATH"
           command: |
-            mv geckodriver /usr/local/bin/
+#            mv geckodriver /usr/local/bin/
+            rm geckodriver-v0.19.1-linux32.tar.gz
 
 #      - run:
 #         name: "Download Firefox"
