@@ -107,7 +107,7 @@ jobs:
           apt-get update
           apt-get install libpango1.0-0
           apt-get install firefox
-          ln -f /usr/lib/firefox/firefox /usr/bin/firefox
+          ln /usr/lib/firefox/firefox /usr/bin/firefox
 
 
       - run:
