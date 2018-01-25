@@ -102,7 +102,7 @@ jobs:
 #            curl -https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.19.1-linux32.tar.gz
 
       - run:
-         name:"Download Firefox"
+         name: "Download Firefox"
          command:
           sudo apt-get update
           sudo apt-get install libpango1.0-0
