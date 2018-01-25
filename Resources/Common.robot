@@ -19,10 +19,11 @@ Resource  ../Resources/PO/ViewOffenderHeaderRecord.robot
 
 *** Keywords ***
 
-Setup chromedriver
+Setup gecko driver
   Set Environment Variable  webdriver.geckodriver.driver  ./${EXECDIR}/StandAloneDrivers/geckodriver
 
 Begin Web Test
+    Setup gecko driver
     Open Browser  about:blank  ${BROWSER}   remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES}
 #    Maximize Browser Window
 
