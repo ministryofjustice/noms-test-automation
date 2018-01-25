@@ -100,7 +100,7 @@ jobs:
       - run:
           name: "Extract the file"
           command: |
-            sh -c 'tar -x geckodriver -zf geckodriver-v0.19.1-linux32.tar.gz -O > /usr/local/bin/geckodriver'
+            sudo sh -c 'tar -x geckodriver -zf geckodriver-v0.19.1-linux32.tar.gz -O > /usr/local/bin/geckodriver'
 
       - run:
           name: "Make it executable"
