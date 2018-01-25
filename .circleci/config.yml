@@ -112,20 +112,20 @@ jobs:
           command: |
             rm geckodriver-v0.19.1-linux32.tar.gz
 
-      - run:
-          name: "Download Browser"
-          command: |
-            su && add-apt-repository ppa:mozillateam/firefox-next && apt-get update && apt-get install -y firefox
-#TODO: Attempting to install firefox browser with one liner
+#      - run:
+#          name: "Download Browser"
+#          command: |
+#            sudo add-apt-repository ppa:mozillateam/firefox-next
+#
 #      - run:
 #          name: "Update Browser"
 #          command: |
 #            sudo apt-get update
-#
-#      - run:
-#          name: "Install Browser"
-#          command: |
-#            sudo apt-get install firefox
+
+      - run:
+          name: "Install Browser"
+          command: |
+            sudo apt-get install firefox
 
       - run:
           command: |
