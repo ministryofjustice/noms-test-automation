@@ -84,12 +84,12 @@ jobs:
       - run:
           name: "Install robot"
           command: |
-            pip install robotframework
+            pip install robotframework --user
 
       - run:
           name: "Install Selenium2Library"
           command: |
-            pip install robotframework-Selenium2Library==1.8
+            pip install robotframework-Selenium2Library==1.8 --user
 
       - run:
           command: |
