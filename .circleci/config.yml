@@ -92,7 +92,7 @@ jobs:
 
       - run:
           command: |
-            pybot -d test-reports Tests/
+            ~/.local/bin/pybot -d test-reports Tests/
 
       - save_cache:
           paths:
@@ -102,13 +102,13 @@ jobs:
       # run tests!
       # this example uses Django's built-in test-runner
       # other common Python testing frameworks include pytest and nose
-      # https://pytest.org
-      # https://nose.readthedocs.io
-      - run:
-          name: run tests
-          command: |
-            . venv/bin/activate
-            python manage.py test
+#      # https://pytest.org
+#      # https://nose.readthedocs.io
+#      - run:
+#          name: run tests
+#          command: |
+#            . venv/bin/activate
+#            python manage.py test
 
       - store_artifacts:
           path: test-reports
