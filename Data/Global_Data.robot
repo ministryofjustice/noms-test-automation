@@ -27,5 +27,5 @@ ${INVALID_USER} =   IncorrectUser
 
 &{SEARCH_RESULTS}    a=Alderton, John   b=Balog, Igor   offenderSurname=Alderton    offenderFirstName=John
 
-&{OFFENDER_HEADER_RECORD}    prisonerNo=A1572AE  keyWorker=Willis, Michael   name=Chtest, Api14.2  iep=Standard
-    ...  alerts=1 active | 2 inactive   location=LEEDS (HMP)
+&{OFFENDER_HEADER_RECORD}    prisonerNo=A1418AE  keyWorker=Notm, Test_user   name=Child, Andrew  iep=Standard
+    ...  alerts=0 active | 0 inactive   location=LEEDS (HMP)
