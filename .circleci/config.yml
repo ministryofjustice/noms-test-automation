@@ -127,10 +127,10 @@ jobs:
 #          command: |
 #            sudo apt-get update
 
-#      - run:
-#          name: "Install Browser"
-#          command: |
-#            sudo apt-get install firefox-57.0.4
+      - run:
+          name: "Install Browser"
+          command: |
+            sudo apt-get install firefox
 
       - run:
           command: |
