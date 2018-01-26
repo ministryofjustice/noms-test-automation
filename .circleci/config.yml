@@ -127,9 +127,9 @@ jobs:
 #            sudo apt-get update
 
       - run:
-          name: "Install framebuffer"
+          name: "Get ff version"
           command: |
-            sudo apt-get install xvfb
+            firefox --version
 
       - run:
           command: |
