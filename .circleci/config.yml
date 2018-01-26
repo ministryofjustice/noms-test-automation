@@ -76,7 +76,7 @@ jobs:
       - run:
           name: "geckodriver --version"
           command: |
-            geckodriver --version
+            /usr/local/bin/geckodriver --version
 #      - run:
 #          name: install dependencies
 #          command: |
