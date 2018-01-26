@@ -96,7 +96,6 @@ jobs:
           command: |
             wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-linux32.tar.gz
 
-
       - run:
           name: "Extract the file"
           command: |
@@ -128,14 +127,9 @@ jobs:
 #            sudo apt-get update
 
       - run:
-          name: "Install Browser"
+          name: "Install framebuffer"
           command: |
-            sudo apt-get install firefox
-
-      - run:
-          name: "Make ff executable"
-          command: |
-            sudo chmod +x /usr/bin/firefox
+            sudo apt-get install xvfb
 
       - run:
           command: |
