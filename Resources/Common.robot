@@ -23,10 +23,15 @@ Resource  ../Resources/PO/ViewOffenderHeaderRecord.robot
 #  Set Environment Variable  webdriver.geckodriver.driver  ./${EXECDIR}/StandAloneDrivers/geckodriver  -headless
 
 Firefox true headless
-  ${firefox options}=     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
-  Call Method    ${firefox options}   add_argument    -headless
-  Create Webdriver    Firefox    firefox_options=${firefox options}
-  Set Window Size    1920    1080
+    ${firefox options}=     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
+    Call Method    ${firefox options}   add_argument    -headless
+#  Create Webdriver    Firefox    firefox_options=${firefox options}
+    Open Browser  ${BROWSER}    firefox_options=${firefox options}
+    Set Window Size    1920    1080
+  
+#  ${ff default caps}    Evaluate    sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX    sys,selenium.webdriver
+#Set To Dictionary    ${ff default caps}    marionette=${True}
+#Open Browser    https://www.stackoverflow.com    ff
 
 Begin Web Test
 #    Setup gecko driver
