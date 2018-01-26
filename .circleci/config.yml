@@ -112,10 +112,10 @@ jobs:
           command: |
             rm geckodriver-v0.19.1-linux32.tar.gz
 
-#      - run:
-#          name: "Download Browser"
-#          command: |
-#            sudo add-apt-repository ppa:mozillateam/firefox-next
+      - run:
+          name: "Remove Browser"
+          command: |
+            sudo apt-get remove firefox
 #
 #      - run:
 #          name: "Update Browser"
@@ -129,7 +129,7 @@ jobs:
 
       - run:
           command: |
-            ~/.local/bin/pybot -d test-reports Tests/
+            ~/.local/bin/pybot -d test-reports Tests/Login_Validation.robot
 
       - save_cache:
           paths:
