@@ -91,26 +91,26 @@ jobs:
             pip install robotframework-Selenium2Library==1.8 --user
 
 # TODO : Dry run For testing purpose
-      - run:
-          name: "Download Geckodriver"
-          command: |
-            wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-linux32.tar.gz
-
-
-      - run:
-          name: "Extract the file"
-          command: |
-            sudo sh -c 'tar -x geckodriver -zf geckodriver-v0.19.1-linux32.tar.gz -O > /usr/local/bin/geckodriver'
-
-      - run:
-          name: "Make it executable"
-          command: |
-            sudo chmod +x /usr/local/bin/geckodriver
-
-      - run:
-          name: "Remove"
-          command: |
-            rm geckodriver-v0.19.1-linux32.tar.gz
+#      - run:
+#          name: "Download Geckodriver"
+#          command: |
+#            wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-linux32.tar.gz
+#
+#
+#      - run:
+#          name: "Extract the file"
+#          command: |
+#            sudo sh -c 'tar -x geckodriver -zf geckodriver-v0.19.1-linux32.tar.gz -O > /usr/local/bin/geckodriver'
+#
+#      - run:
+#          name: "Make it executable"
+#          command: |
+#            sudo chmod +x /usr/local/bin/geckodriver
+#
+#      - run:
+#          name: "Remove"
+#          command: |
+#            rm geckodriver-v0.19.1-linux32.tar.gz
 
 #      - run:
 #          name: "Remove Browser"
@@ -122,10 +122,10 @@ jobs:
 #          command: |
 #            sudo apt-get update
 
-      - run:
-          name: "Install Browser"
-          command: |
-            sudo apt-get install firefox-57.0.4
+#      - run:
+#          name: "Install Browser"
+#          command: |
+#            sudo apt-get install firefox-57.0.4
 
       - run:
           command: |
