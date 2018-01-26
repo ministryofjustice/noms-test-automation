@@ -132,7 +132,6 @@ jobs:
           command: |
             sudo apt-get install firefox
 
-# TODO : Delete if doesn't work
        - run:
           name: "Make ff executable"
           command: |
