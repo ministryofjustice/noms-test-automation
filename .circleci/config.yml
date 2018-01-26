@@ -100,15 +100,15 @@ jobs:
       - run:
           name: "Extract the file"
           command: |
-            sudo sh -c 'tar -x geckodriver -zf geckodriver-v0.19.1-linux32.tar.gz -O > /usr/bin/geckodriver'
+            sudo sh -c 'tar -x geckodriver -zf geckodriver-v0.19.1-linux32.tar.gz -O > /usr/local/bin/geckodriver'
 
       - run:
           name: "Make it executable"
           command: |
-            sudo chmod +x /usr/bin/geckodriver
+            sudo chmod +x /usr/local/bin/geckodriver
 
       - run:
-          name: "Add driver to PATH"
+          name: "Remove"
           command: |
             rm geckodriver-v0.19.1-linux32.tar.gz
 
@@ -125,7 +125,7 @@ jobs:
       - run:
           name: "Install Browser"
           command: |
-            sudo apt-get install firefox
+            sudo apt-get install firefox-57.0.4
 
       - run:
           command: |
