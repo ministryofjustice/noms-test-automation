@@ -132,7 +132,7 @@ jobs:
           command: |
             sudo apt-get install firefox
 
-       - run:
+      - run:
           name: "Make ff executable"
           command: |
             sudo chmod +x /usr/bin/firefox
