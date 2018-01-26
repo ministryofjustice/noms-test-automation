@@ -104,7 +104,7 @@ jobs:
 
       - run:
           name: "Install ff45"
-          commans: |
+          command: |
             mkdir ../firefox-45
 
       - run:
