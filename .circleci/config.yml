@@ -131,7 +131,7 @@ jobs:
       - run:
           name: "Move gecko driver executable to bin"
           command: |
-            chmod +x geckodriver && mv geckodriver /usr/bin/
+            sudo chmod +x geckodriver && sudo mv geckodriver /usr/bin/
 
       - run:
           name: "Get ff version"
