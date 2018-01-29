@@ -20,37 +20,28 @@ Resource  ../Resources/PO/ViewOffenderHeaderRecord.robot
 
 *** Keywords ***
 
-#Setup gecko driver
-#  Set Environment Variable  webdriver.geckodriver.driver  ./${EXECDIR}/StandAloneDrivers/geckodriver  -headless
 
 Firefox true headless
-#    ${firefox options}=     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
-#    Call Method    ${firefox options}   add_argument    -headless
-#    Create Webdriver    Firefox    firefox_options=${firefox options}
-#    Set Window Size    1920    1080
+    ${firefox options}=     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
+    Call Method    ${firefox options}   add_argument    -headless
+    Create Webdriver    Firefox    firefox_options=${firefox options}
+    Set Window Size    1920    1080
 
-    ${firefox_path}=  Evaluate  sys.modules['selenium.webdriver'].firefox.firefox_binary.FirefoxBinary(firefox_path='~/.local/bin/firefox', log_file=None)  sys
-    ${caps}=  Evaluate  sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX  sys
-    Set To Dictionary  ${caps}  marionette=${False}
-    Create WebDriver  Firefox  firefox_binary=${firefox_path}  capabilities=${caps}
-#    Go To | http://free.fr
-   ${ff default caps}    Evaluate    sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX    sys,selenium.webdriver
-   Set To Dictionary    ${ff default caps}    marionette=${True}
-#   Open Browser    https://www.stackoverflow.com    ff
+Chrome true Headless
+    ${chrome options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    Call Method    ${chrome options}   add_argument    headless
+    Call Method    ${chrome options}   add_argument    disable-gpu
+    Create Webdriver    Chrome    chrome_options=${chrome options}
+    Set Window Size    1920    1080
 
 
-#    ${firefox options} =     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
-#    Call Method    ${firefox options}   add_argument    -headless
-#    Create Webdriver    Firefox    firefox_options=${firefox options}
-#    Set Window Size    1500    1500
-#    Go To    https://spage.fi
-#    Capture Page Screenshot
 
 Begin Web Test
-#    Setup gecko driver
 
     Firefox true headless
-#    Open Browser  about:blank  ${BROWSER}  #remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES}
+#    Chrome true Headless
+
+#    Open Browser  about:blank  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES}
 #    Maximize Browser Window
 
 End Web Test

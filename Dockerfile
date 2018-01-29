@@ -1,11 +1,15 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install --quiet --assume-yes python-pip unzip firefox wget
+WORKDIR /app
+
+ADD . /app
+
+RUN apt-get update && apt-get install --quiet --fix-missing --assume-yes python-pip unzip firefox wget
 
 RUN wget --no-verbose https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN dpkg --install google-chrome-stable_current_amd64.deb; apt-get --fix-broken --assume-yes install
 
-RUN pip install --pre robotframework-seleniumlibrary
+RUN pip install --pre robotframework-selenium2library==1.8
 
 RUN CHROMEDRIVER_VERSION=`wget --no-verbose --output-document - https://chromedriver.storage.googleapis.com/LATEST_RELEASE` && \
     wget --no-verbose --output-document /tmp/chromedriver_linux64.zip http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip && \
@@ -18,3 +22,5 @@ RUN GECKODRIVER_VERSION=`wget --no-verbose --output-document - https://api.githu
     tar --directory /opt -zxf /tmp/geckodriver.tar.gz && \
     chmod +x /opt/geckodriver && \
     ln -fs /opt/geckodriver /usr/local/bin/geckodriver
+
+CMD ["pybot", "-d", "Results", "Tests/"]
