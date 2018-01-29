@@ -4,6 +4,7 @@ Documentation  This is the common keyword file holding keywords to elements of t
 
 Library  Selenium2Library
 Library  OperatingSystem
+Library  Collections
 
 Resource  ../Data/Global_Data.robot
 Resource  ../Resources/PO/Toolbar.robot
@@ -28,20 +29,20 @@ Firefox true headless
 #    Create Webdriver    Firefox    firefox_options=${firefox options}
 #    Set Window Size    1920    1080
 
-#    ${firefox_path}= | Evaluate | sys.modules['selenium.webdriver'].firefox.firefox_binary.FirefoxBinary(firefox_path='C:\\Users\\xxx\\FirefoxPortable37\\FirefoxPortable.exe', log_file=None) | sys
-#    ${caps}= | Evaluate | sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX | sys
-#    Set To Dictionary | ${caps} | marionette=${False}
-#    Create WebDriver | Firefox | firefox_binary=${firefox_path} | capabilities=${caps}
+    ${firefox_path}=  Evaluate  sys.modules['selenium.webdriver'].firefox.firefox_binary.FirefoxBinary(firefox_path='~/.local/bin/firefox', log_file=None)  sys
+    ${caps}=  Evaluate  sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX  sys
+    Set To Dictionary  ${caps}  marionette=${False}
+    Create WebDriver  Firefox  firefox_binary=${firefox_path}  capabilities=${caps}
 #    Go To | http://free.fr
-#   ${ff default caps}    Evaluate    sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX    sys,selenium.webdriver
-#   Set To Dictionary    ${ff default caps}    marionette=${True}
+   ${ff default caps}    Evaluate    sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX    sys,selenium.webdriver
+   Set To Dictionary    ${ff default caps}    marionette=${True}
 #   Open Browser    https://www.stackoverflow.com    ff
 
 
-    ${firefox options} =     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
-    Call Method    ${firefox options}   add_argument    -headless
-    Create Webdriver    Firefox    firefox_options=${firefox options}
-    Set Window Size    1500    1500
+#    ${firefox options} =     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
+#    Call Method    ${firefox options}   add_argument    -headless
+#    Create Webdriver    Firefox    firefox_options=${firefox options}
+#    Set Window Size    1500    1500
 #    Go To    https://spage.fi
 #    Capture Page Screenshot
 
