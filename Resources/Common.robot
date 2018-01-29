@@ -27,6 +27,12 @@ Firefox true headless
     Call Method    ${firefox options}   add_argument    -headless
     Create Webdriver    Firefox    firefox_options=${firefox options}
     Set Window Size    1920    1080
+
+#    ${firefox_path}= | Evaluate | sys.modules['selenium.webdriver'].firefox.firefox_binary.FirefoxBinary(firefox_path='C:\\Users\\xxx\\FirefoxPortable37\\FirefoxPortable.exe', log_file=None) | sys
+#    ${caps}= | Evaluate | sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX | sys
+#    Set To Dictionary | ${caps} | marionette=${False}
+#    Create WebDriver | Firefox | firefox_binary=${firefox_path} | capabilities=${caps}
+#    Go To | http://free.fr
 #  ${ff default caps}    Evaluate    sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX    sys,selenium.webdriver
 #Set To Dictionary    ${ff default caps}    marionette=${True}
 #Open Browser    https://www.stackoverflow.com    ff
@@ -34,8 +40,8 @@ Firefox true headless
 Begin Web Test
 #    Setup gecko driver
 
-    Firefox true headless
-#    Open Browser  about:blank  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES} -headless
+#    Firefox true headless
+    Open Browser  about:blank  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES}
 #    Maximize Browser Window
 
 End Web Test
