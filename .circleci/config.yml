@@ -1,41 +1,8 @@
-#version: 2
-#jobs:
-#  build:
-#    docker:
-#      - image: circleci/python:2.7-stretch-browsers
-#
-#    steps:
-#      - checkout
-#      - run: mkdir test-reports
-##     - run:
-##          name: Download Selenium
-##          command: |
-##            curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
-##      - run:
-##          name: Start Selenium
-##          command: |
-#            java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
-##          background: true
-#
-#
-#
-#      - store_artifacts:
-#          path: test-reports/
-#          destination: tr1
-#      - store_test_results:
-#          path: test-reports/
-#      - add_ssh_keys:
-#          fingerprints:
-#            - "48:a0:87:54:ca:75:32:12:c6:9e:a2:77:a4:7a:08:a4"
-#
-# Python CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-python/ for more details
-#
 version: 2
 jobs:
   build:
-    machine: true
+    machine:
+      docker_layer_caching: true
     working_directory: ~/repo
     steps:
       - checkout
@@ -44,7 +11,7 @@ jobs:
       - run: docker build -t noms .
       - run: docker run --name app noms
       # once application container finishes we can copy artifacts directly from it
-      - run: docker cp app:/app/Results test-reports
+      - run: docker cp -R app:/app/Results /home/circleci/repo/test-reports
       - store_test_results:
           path: test-reports
           destination: test-reports
