@@ -68,7 +68,9 @@ jobs:
       - run:
           name: "Add .local to path"
           command: |
-            PATH=$PATH\:/~/.local/bin; export PATH
+            echo 'export PATH=~/.local/bin/:$PATH' >> $BASH_ENV
+
+      - run: source ~/.bashrc
 
       - run:
           name: "Install robot"
