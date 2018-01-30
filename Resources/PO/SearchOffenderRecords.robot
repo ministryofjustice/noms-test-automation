@@ -24,7 +24,7 @@ Enter Search Value
    Input Text  ${SEARCH_BOX}  ${search_value}
 
 Click "Search" Button
-    Click Element   ${SEARCH_BUTTON}
+    Wait Until Keyword Succeeds  10  0  Click Element   ${SEARCH_BUTTON}
 
 No Matching Message Displays
     Page Should Contain Element    ${NO_MATCHING_RECORD}

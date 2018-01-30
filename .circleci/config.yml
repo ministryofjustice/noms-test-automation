@@ -11,7 +11,7 @@ jobs:
       - run: docker build -t noms .
       - run: docker run --name app noms
       # once application container finishes we can copy artifacts directly from it
-      - run: docker cp app:/app/Results ./test-reports
+      - run: docker cp app:/app/Results ./circleci/repo/test-reports
       - store_test_results:
           path: test-reports
           destination: test-reports

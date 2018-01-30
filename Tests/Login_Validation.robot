@@ -15,7 +15,7 @@ Scenario 1: Validate that User Cannot Login Into [Nomis] With Incorrect Credenti
     Given User Enters Incorrect Credentials To Login Into [NOMIS]
     When User Selects Submit Button
     Then Check User Is Not Allowed Access And An Error Message Is Displayed
-
+#
 #Scenario 2: Ensure that User Cannot Login Into [Nomis] Without Credentials
 #    [Tags]  [JIRA: EA-7]
 #    Given User Attempts To Login Into [NOMIS] Without Credentials

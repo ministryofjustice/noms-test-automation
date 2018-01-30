@@ -1,6 +1,5 @@
 *** Settings ***
 Documentation    This is the Page Object for the Login Page
-#Resource  ../PO/Dashboard.robot
 Resource  ../../Data/Global_Data.robot
 Library  Selenium2Library
 

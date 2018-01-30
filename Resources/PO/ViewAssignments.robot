@@ -19,7 +19,7 @@ As Key Worker Link Is Available
     Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${KEY_WORKER_LINK}
 
 Click "As Key Worker" Link
-    Click Element   ${KEY_WORKER_LINK}
+    Wait Until Keyword Succeeds  20  0  Click Element   ${KEY_WORKER_LINK}
 
 Check 'Assignments' Page Displays
     Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${ASSIGNMENT_PAGE}
