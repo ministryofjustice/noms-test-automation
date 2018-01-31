@@ -7,6 +7,7 @@ jobs:
     steps:
       - checkout
       - run: mkdir test-reports
+      - run: mkdir test-results
 
       - run: docker build -t noms .
       - run: docker run --name app noms
@@ -16,6 +17,6 @@ jobs:
           path: test-reports
           destination: test-reports
       - store_test_results:
-          path: test-reports/Results/output.xml
-          destination: test-report
+          path: test-reports
+          destination: test-results
 
