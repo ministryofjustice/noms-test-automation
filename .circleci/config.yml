@@ -19,7 +19,7 @@ jobs:
           name: Install Robotframework
           command: |
             sudo pip install --pre robotframework-selenium2library==1.8
-      -run: ln -fs /opt/geckodriver /usr/local/bin/geckodriver
+      - run: ln -fs /opt/geckodriver /usr/local/bin/geckodriver
       - run:
           name: Tests
           command: pybot -d Results Tests/
