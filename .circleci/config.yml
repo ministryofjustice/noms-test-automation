@@ -22,7 +22,7 @@ jobs:
       -run: ln -fs /opt/geckodriver /usr/local/bin/geckodriver
       - run:
           name: Tests
-          command: sudo pybot -d Results Tests/
+          command: pybot -d Results Tests/
 #      - run:
 #          name: Install Gecko
 #          command: |
