@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Install Robotframework
           command: |
-            pip install --user --pre robotframework-selenium2library==1.8
+            sudo pip install --pre robotframework-selenium2library==1.8
       - run:
           name: Tests
           command: pybot -d Results Tests/
