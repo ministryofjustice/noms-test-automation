@@ -11,7 +11,7 @@ jobs:
       - run: docker build -t noms .
       - run: docker run --name app noms
 #       once application container finishes we can copy artifacts directly from it
-      - run: docker cp app:/app/Results ./test-results
+      - run: docker cp app:/app/Results ./test-reports
       - store_artifacts:
           path: test-reports
           destination: tr1
