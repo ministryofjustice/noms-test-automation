@@ -18,29 +18,29 @@ Scenario 1: Check [Search Results] Page Displays When Search For Offenders
     Then Check That [Search Results] Page Displays
 
 
-#Scenario 2: Validate The Static Table Column Headers Are Correct On [Search Results] Page
-#    [Tags]  [JIRA: EA-8]    [JIRA: EM-79]
-#    Given Admin User Logs Into [NOMIS]
-#    When User Logs in Successfully
-#    And Selects [Search] Button
-#    Then Validate The Table Column Headers On [Search Results] Page
-#
-#Scenario 3: Validate The [Grid & List] View Functions
-#    [Tags]  [JIRA: EA-8]    [JIRA: EM-79]
-#    Given Admin User Logs Into [NOMIS]
-#    When User Logs in Successfully
-#    And Selects [Search] Button
-#    When Selects [Grid] View Option
-#    Then Check That [Sort By Name] Option Displays
-#    And Selects [List] View Option
-#    Then Validate [Sort By Name] Option Is No Longer Display
-#    And Home Page Displays If Breadcrumb Is Selected
-#
-#Scenario 4: Check That Selecting An Offender Takes User To Offender Details Tab
-#    [Tags]  [JIRA: EA-8]    [JIRA: EM-79]
-#    Given Admin User Logs Into [NOMIS]
-#    When User Logs in Successfully
-#    And Selects [Search] Button
-#    When Selects [Offender]
-#    Then [Offender] Details Tab Displays
+Scenario 2: Validate The Static Table Column Headers Are Correct On [Search Results] Page
+    [Tags]  [JIRA: EA-8]    [JIRA: EM-79]
+    Given Admin User Logs Into [NOMIS]
+    When User Logs in Successfully
+    And Selects [Search] Button
+    Then Validate The Table Column Headers On [Search Results] Page
+
+Scenario 3: Validate The [Grid & List] View Functions
+    [Tags]  [JIRA: EA-8]    [JIRA: EM-79]
+    Given Admin User Logs Into [NOMIS]
+    When User Logs in Successfully
+    And Selects [Search] Button
+    When Selects [Grid] View Option
+    Then Check That [Sort By Name] Option Displays
+    And Selects [List] View Option
+    Then Validate [Sort By Name] Option Is No Longer Display
+    And Home Page Displays If Breadcrumb Is Selected
+
+Scenario 4: Check That Selecting An Offender Takes User To Offender Details Tab
+    [Tags]  [JIRA: EA-8]    [JIRA: EM-79]
+    Given Admin User Logs Into [NOMIS]
+    When User Logs in Successfully
+    And Selects [Search] Button
+    When Selects [Offender]
+    Then [Offender] Details Tab Displays
 

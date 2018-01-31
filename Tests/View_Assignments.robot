@@ -17,32 +17,32 @@ Scenario 1: Check [View Assignments] Section Is Available On The Home Page After
     When [Nomis] Home Page Displays
     Then Check That [View Assignments] Section Is Available
 
-#Scenario 2: Check [Key Worker] Link Is Available On The Home Page After Successful Login
-#    [Tags]  [JIRA: EM-143]
-#    Given Keyworker User Logs Into [NOMIS]
-#    When [Nomis] Home Page Displays
-#    Then Check That [As Key Worker] Link Is Available
-#
-#Scenario 3: Validate That Selecting [As Key Worker] Link Takes The User To [Assignments] Page
-#    [Tags]  [JIRA: EM-143]
-#    Given Keyworker User Logs Into [NOMIS]
-#    When [Nomis] Home Page Displays
-#    And Selects [As Key Worker] Link
-#    Then Check That [Assignments] Page Is Displays
-#    And [Key Worker] Full Name Displays
-#
-#Scenario 4: Validate The Static Table Available On [Assignments] Page
-#    [Tags]  [JIRA: EM-143]
-#    Given Keyworker User Logs Into [NOMIS]
-#    When [Nomis] Home Page Displays
-#    And Selects [As Key Worker] Link
-#    Then Check That [Assignments] Page Is Displays
-#    And Validate The Static Table Column Headers
-#
-#Scenario 5: Check The [Grid & List] Toggle Links Available On [Assignments] Page
-#    [Tags]  [JIRA: EM-143]
-#    Given Keyworker User Logs Into [NOMIS]
-#    When [Nomis] Home Page Displays
-#    And Selects [As Key Worker] Link
-#    Then Check That [Assignments] Page Is Displays
-#    And Check [Grid & List] Toggle Links Are Available
+Scenario 2: Check [Key Worker] Link Is Available On The Home Page After Successful Login
+    [Tags]  [JIRA: EM-143]
+    Given Keyworker User Logs Into [NOMIS]
+    When [Nomis] Home Page Displays
+    Then Check That [As Key Worker] Link Is Available
+
+Scenario 3: Validate That Selecting [As Key Worker] Link Takes The User To [Assignments] Page
+    [Tags]  [JIRA: EM-143]
+    Given Keyworker User Logs Into [NOMIS]
+    When [Nomis] Home Page Displays
+    And Selects [As Key Worker] Link
+    Then Check That [Assignments] Page Is Displays
+    And [Key Worker] Full Name Displays
+
+Scenario 4: Validate The Static Table Available On [Assignments] Page
+    [Tags]  [JIRA: EM-143]
+    Given Keyworker User Logs Into [NOMIS]
+    When [Nomis] Home Page Displays
+    And Selects [As Key Worker] Link
+    Then Check That [Assignments] Page Is Displays
+    And Validate The Static Table Column Headers
+
+Scenario 5: Check The [Grid & List] Toggle Links Available On [Assignments] Page
+    [Tags]  [JIRA: EM-143]
+    Given Keyworker User Logs Into [NOMIS]
+    When [Nomis] Home Page Displays
+    And Selects [As Key Worker] Link
+    Then Check That [Assignments] Page Is Displays
+    And Check [Grid & List] Toggle Links Are Available
