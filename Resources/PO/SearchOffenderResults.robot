@@ -29,17 +29,21 @@ Offender Details Tab Displays
     Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${OFFENDER_DETAILS_TAB}
 
 Select "Grid" View
+    Capture Page Screenshot
     Wait Until Keyword Succeeds  20  0  Click Element   ${GRID_VIEW}
 
 Sort By Names Displays
+    Capture Page Screenshot
     Wait Until Keyword Succeeds  20  0  Page Should Contain Element    ${SORT_BY}
     Page Should Contain Element    ${A_TO_Z}
     Page Should Contain Element    ${Z_TO_A}
 
 Select "List" View
+    Capture Page Screenshot
     Wait Until Keyword Succeeds  20  0  Click Element   ${LIST_VIEW}
 
 Sort By Names No Longer Display
+    Capture Page Screenshot
     Wait Until Keyword Succeeds  20  0  Page Should Not Contain Element    ${SORT_BY}
     Page Should Not Contain Element    ${A_TO_Z}
     Page Should Not Contain Element    ${Z_TO_A}
