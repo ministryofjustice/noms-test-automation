@@ -1,22 +1,38 @@
 version: 2
 jobs:
   build:
-    machine:
-      docker_layer_caching: true
-    working_directory: ~/repo
+#    machine:
+#      docker_layer_caching: true
+    docker:
+      - image: circle/python:2.7.14-stretch-browsers
+#    working_directory: ~/repo
     steps:
       - checkout
 #     - run: mkdir test-reports
-      - run: mkdir test-results
+      - run: mkdir test-reports
 
-      - run: docker build -t noms .
-      - run: docker run --name app noms
+#      - run: docker build -t noms .
+#      - run: docker run --name app noms
       # once application container finishes we can copy artifacts directly from it
-      - run: docker cp app:/app/Results ./test-results
+#      - run: docker cp app:/app/Results ./test-results
+      - run:
+          name: Install Robotframework
+          command: |
+            pip install --pre robotframework-selenium2library==1.8
+      - run:
+          name: Tests
+          command: pybot -d Results Tests/
+#      - run:
+#          name: Install Gecko
+#          command: |
+#            GECKODRIVER_VERSION=`wget --no-verbose --output-document - https://api.github.com/repos/mozilla/geckodriver/releases/latest | grep tag_name | cut -d '"' -f 4` && \
+#            wget --no-verbose --output-document /tmp/geckodriver.tar.gz https://github.com/mozilla/geckodriver/releases/download/$GECKODRIVER_VERSION/geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz && \
+#            tar --directory /opt -zxf /tmp/geckodriver.tar.gz && \
+#            chmod +x /opt/geckodriver && \
+#            ln -fs /opt/geckodriver /usr/local/bin/geckodriver
       - store_artifacts:
-          path: test-results
-          destination: test-results
+          path: test-reports/
+          destination: tr1
       - store_test_results:
-          path: test-results
-          destination: test-results
+          path: test-reports/
 

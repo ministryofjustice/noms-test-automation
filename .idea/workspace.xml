@@ -4,6 +4,7 @@
     <list default="true" id="3462538a-3722-4353-a16d-f583199b0d5e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.circleci/config.yml" afterPath="$PROJECT_DIR$/.circleci/config.yml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="14" />
+            <state relative-caret-position="119">
+              <caret line="7" column="98" lean-forward="false" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -28,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -47,6 +48,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>WORKDIR</find>
+      <find>unzip</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -77,13 +79,13 @@
         <option value="$PROJECT_DIR$/Resources/PO/SearchOffenderRecords.robot" />
         <option value="$PROJECT_DIR$/Resources/PO/LoginPage.robot" />
         <option value="$PROJECT_DIR$/Resources/PO/ViewAssignments.robot" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/Tests/Login_Validation.robot" />
         <option value="$PROJECT_DIR$/Tests/Search_Offender_Records.robot" />
         <option value="$PROJECT_DIR$/Tests/Search_Offender_Result.robot" />
         <option value="$PROJECT_DIR$/Tests/View_Assignments.robot" />
         <option value="$PROJECT_DIR$/Tests/View_Offender_Header_Record.robot" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/.circleci/config.yml" />
       </list>
     </option>
@@ -175,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515676058621</updated>
-    </task>
-    <task id="LOCAL-00031" summary="circleci config">
-      <created>1516923329030</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1516923329030</updated>
     </task>
     <task id="LOCAL-00032" summary="circleci config">
       <created>1516923766981</created>
@@ -519,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517395730790</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="report output config">
+      <created>1517396090708</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1517396090708</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -903,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="14" />
+        <state relative-caret-position="119">
+          <caret line="7" column="98" lean-forward="false" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="98" />
           <folding />
         </state>
       </provider>
@@ -912,7 +914,7 @@
     <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding />
         </state>
       </provider>
