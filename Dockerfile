@@ -1,11 +1,11 @@
-#FROM ubuntu:16.04
-FROM circleci/pyhton:2.7-stretch-browsers
+FROM ubuntu:16.04
+#FROM circleci/pyhton:2.7-stretch-browsers
 
 WORKDIR /app
 
 ADD . /app
 
-#RUN apt-get update && apt-get install --quiet --fix-missing --assume-yes python-pip unzip firefox wget
+RUN apt-get update && apt-get install --quiet --fix-missing --assume-yes python-pip unzip firefox wget
 
 #RUN wget --no-verbose https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 #RUN dpkg --install google-chrome-stable_current_amd64.deb; apt-get --fix-broken --assume-yes install
