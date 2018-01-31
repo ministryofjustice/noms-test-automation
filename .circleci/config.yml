@@ -6,17 +6,17 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: mkdir test-reports
+#     - run: mkdir test-reports
       - run: mkdir test-results
 
       - run: docker build -t noms .
       - run: docker run --name app noms
       # once application container finishes we can copy artifacts directly from it
-      - run: docker cp app:/app/Results ./test-reports
+      - run: docker cp app:/app/Results ./test-results
       - store_artifacts:
-          path: test-reports
-          destination: test-reports
+          path: test-results
+          destination: test-results
       - store_test_results:
           path: test-results
-          destination: test-reports
+          destination: test-results
 
