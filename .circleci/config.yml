@@ -4,7 +4,7 @@ jobs:
 #    machine:
 #      docker_layer_caching: true
     docker:
-      - image: circle/python:2.7.14-stretch-browsers
+      - image: circle/python:2.7-stretch-browsers
 #    working_directory: ~/repo
     steps:
       - checkout
