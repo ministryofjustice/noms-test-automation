@@ -2,12 +2,14 @@ version: 2
 jobs:
   build:
     machine:
-      docker_layer_caching: true
+      docker_layer_caching: false
     working_directory: ~/repo
     steps:
       - checkout
       - run: mkdir test-reports
 
+#      - run: docker rm -f noms
+#      - run: docker rm -f app
       - run: docker build -t noms .
       - run: docker run --name app noms
 #       once application container finishes we can copy artifacts directly from it
