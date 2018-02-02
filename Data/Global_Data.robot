@@ -32,3 +32,7 @@ ${INVALID_USER} =   IncorrectUser
 
 &{OFFENDER_HEADER_RECORD}    prisonerNo=A1418AE  keyWorker=Notm, Test_user   name=Child, Andrew  iep=Standard
     ...  alerts=0 active | 0 inactive   location=LEEDS (HMP)
+
+&{OFFENDER_WITH_NO_KEYWORKER}    prisonerNo=A1588AE  keyWorker=--   name=Ricardson, Jeffery  iep=Standard
+    ...  alerts=0 active | 0 inactive   location=LEEDS (HMP)    noKeyWorkerAssigned=Ricardson, Jeffery
+

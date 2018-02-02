@@ -42,3 +42,11 @@ Selects [Add Case Note] Link
 
 Validate The [URL]
     ViewOffenderHeaderRecord.Check The URL
+
+Enters No Keyworker Offender's [Name] Into The [Search] Field
+    LoginPage.Wait For Page Ready     ${SEARCH_BOX}
+    SearchOffenderRecords.Enter Search Value  ${OFFENDER_WITH_NO_KEYWORKER.name}
+
+Check No Keyworker Assigned To Offender
+    ViewOffenderHeaderRecord.Check Table Header Details   ${OFFENDER_WITH_NO_KEYWORKER.prisonerNo}   ${OFFENDER_WITH_NO_KEYWORKER.keyWorker}
+    ...     ${OFFENDER_WITH_NO_KEYWORKER.name}  ${OFFENDER_WITH_NO_KEYWORKER.iep}  ${OFFENDER_WITH_NO_KEYWORKER.alerts}  ${OFFENDER_WITH_NO_KEYWORKER.location}
