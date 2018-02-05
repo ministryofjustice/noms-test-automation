@@ -8,8 +8,8 @@ ADD . /app
 RUN apt-get update && apt-get install --quiet --fix-missing --assume-yes python-pip unzip firefox wget
 #RUN apt-get install --quiet --fix-missing --assume-yes firefox
 
-#RUN wget --no-verbose https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-#RUN dpkg --install google-chrome-stable_current_amd64.deb; apt-get --fix-broken --assume-yes install
+RUN wget --no-verbose https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+RUN dpkg --install google-chrome-stable_current_amd64.deb; apt-get --fix-broken --assume-yes install
 
 RUN pip install --pre robotframework-selenium2library==1.8
 
