@@ -10,8 +10,8 @@ jobs:
 
 #      Get rid of dangling images
       - run: docker ps -a
-      - run: docker images
-      - run: docker rmi $(docker images -q --filter "dangling=true")
+      - run: docker image list
+#      - run: docker rmi $(docker images -q --filter "dangling=true")
 
       - run: docker build -t noms .
       - run: docker run --name app noms
