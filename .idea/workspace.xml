@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3462538a-3722-4353-a16d-f583199b0d5e" name="Default" comment="Footer link validation - Dom test">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Resources/PO/FooterLinkValidation.robot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StepDefs/Footer_Link_Validation.robot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Tests/Footer_Link_Validation.robot" />
+    <list default="true" id="3462538a-3722-4353-a16d-f583199b0d5e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -398,13 +395,6 @@
       <option name="presentableId" value="Default" />
       <updated>1515676058621</updated>
     </task>
-    <task id="LOCAL-00053" summary="circleci config">
-      <created>1516982049520</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1516982049520</updated>
-    </task>
     <task id="LOCAL-00054" summary="circleci config">
       <created>1516982151600</created>
       <option name="number" value="00054" />
@@ -741,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517573665507</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Footer link validation - Dom test">
+      <created>1517838475685</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1517838475686</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="ToolWindowManager">
