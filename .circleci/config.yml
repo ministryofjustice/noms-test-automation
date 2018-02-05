@@ -2,11 +2,16 @@ version: 2
 jobs:
   build:
     machine:
-      docker_layer_caching: true
+      docker_layer_caching: false
     working_directory: ~/repo
     steps:
       - checkout
       - run: mkdir test-reports
+
+#      Get rid of dangling images
+      - run: docker ps -a
+      - run: docker images
+      - run: docker rmi $(docker images -q --filter "dangling=true")
 
       - run: docker build -t noms .
       - run: docker run --name app noms
@@ -17,5 +22,5 @@ jobs:
           destination: tr1
 #      - store_test_results:
 #          path: test-reports/output.xml
-      - run: docker rm -f noms
-      - run: docker rm -f app
+#      - run: docker rm -f noms
+#      - run: docker rm -f app
