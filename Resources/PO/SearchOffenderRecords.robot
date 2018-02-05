@@ -20,10 +20,12 @@ Search Field Is Available
     Page Should Contain Element    ${SEARCH_BOX}
 
 Enter Search Value
+    Capture
    [Arguments]  ${search_value}
    Input Text  ${SEARCH_BOX}  ${search_value}
 
 Click "Search" Button
+    Capture
     Wait Until Keyword Succeeds  10  0  Click Element   ${SEARCH_BUTTON}
 
 No Matching Message Displays
@@ -42,9 +44,11 @@ Second Offender Search "Result" In The List
     Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${SECOND_IN_SEARCH_RESULTS_LIST}
 
 Select "Location" Dropdown
+    Capture
     Wait Until Keyword Succeeds  10  0  Click Element   ${LOCATION_FIELD}
 
 Select "LEEDS" From Dropdown
+    Capture
     Wait Until Keyword Succeeds  10  0  Click Element   ${LEEDS}
 
 Offender Details Page Displays
@@ -53,3 +57,6 @@ Offender Details Page Displays
 Search "Result" Does Not Return With Offender
     Sleep  10s
     Page Should Not Contain Element    ${FIRST_SEARCH_RESULTS}
+
+Capture
+    Capture Page Screenshot

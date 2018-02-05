@@ -8,8 +8,6 @@ jobs:
       - checkout
       - run: mkdir test-reports
 
-      - run: docker rm -f noms
-      - run: docker rm -f app
       - run: docker build -t noms .
       - run: docker run --name app noms
 #       once application container finishes we can copy artifacts directly from it
@@ -19,4 +17,5 @@ jobs:
           destination: tr1
 #      - store_test_results:
 #          path: test-reports/output.xml
-
+      - run: docker rm -f noms
+      - run: docker rm -f app
