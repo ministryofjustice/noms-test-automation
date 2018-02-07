@@ -23,6 +23,7 @@ Check The Table Column Headers Are Correct
 	Wait Until Keyword Succeeds  10  0  Page Should Contain Element  ${OFFENDER_SEARCH_RESULT_TABLE}
 
 Select Offender "Alderton"
+    Capture Page Screenshot
     Wait Until Keyword Succeeds  10  0  Click Element  ${OFFENDER_ALDERTON}
 
 Offender Details Tab Displays

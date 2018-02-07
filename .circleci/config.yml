@@ -20,6 +20,10 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: tr1
+
+#      remove all Exited containers
+      - run: sudo docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs sudo docker rm
+
 #      - store_test_results:
 #          path: test-reports/output.xml
 #      - run: docker rm -f noms
