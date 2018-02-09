@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation    This is the Page Object for the Login Page
 Resource  ../../Data/Global_Data.robot
-Library  Selenium2Library
 
 *** Variables ***
 ${LOGINBUTTON} =   xpath=//input[contains(@type, 'submit')]

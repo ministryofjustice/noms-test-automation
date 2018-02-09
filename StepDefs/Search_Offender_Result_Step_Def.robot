@@ -25,8 +25,8 @@ User Logs in Successfully
 Selects [Offender]
     SearchOffenderResults.Select Offender "Alderton"
 
-[Offender] Details Tab Displays
-    SearchOffenderResults.Offender Details Tab Displays
+Offender [Personal Details] Page Displays
+    SearchOffenderResults.Personal Details Page Displays
 
 Selects [Grid] View Option
     SearchOffenderResults.Select "Grid" View
@@ -41,5 +41,5 @@ Validate [Sort By Name] Option Is No Longer Display
     SearchOffenderResults.Sort By Names No Longer Display
 
 Home Page Displays If Breadcrumb Is Selected
-    Toolbar.Select Breadcrumb
+    Toolbar.Select The "Home" Link
     Toolbar.Check User Is On The "Home" Page

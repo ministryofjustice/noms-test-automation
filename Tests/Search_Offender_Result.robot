@@ -42,5 +42,5 @@ Scenario 4: Check That Selecting An Offender Takes User To Offender Details Tab
     When User Logs in Successfully
     And Selects [Search] Button
     When Selects [Offender]
-    Then [Offender] Details Tab Displays
+    Then Offender [Personal Details] Page Displays
 

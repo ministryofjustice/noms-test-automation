@@ -2,7 +2,7 @@
 Documentation  This is the common keyword file holding keywords to elements of the application that are used in many tests
 
 
-Library  Selenium2Library
+Library  SeleniumLibrary
 Library  OperatingSystem
 Library  Collections
 

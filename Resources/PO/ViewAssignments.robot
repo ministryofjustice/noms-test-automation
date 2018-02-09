@@ -1,5 +1,4 @@
 *** Settings ***
-Library  Selenium2Library
 Resource  ../../Data/Global_Data.robot
 
 
@@ -7,7 +6,7 @@ Resource  ../../Data/Global_Data.robot
 ${VIEW_ASSIGNMENTS} =   //h1[contains(.//text(), ' View your assignments ')]
 ${KEY_WORKER_LINK} =   //a[contains(.//text(), 'As Key Worker')]
 
-${ASSIGNMENT_PAGE} =   //a[contains(.//text(), 'Assignments')]
+${MY_ASSIGNMENT_PAGE} =   //a[contains(.//text(), 'My assignments')]
 ${WORKER_FULL_NAME} =   //div[@class='fMHyRU'][contains(.//text(), '')]
 
 *** Keywords ***
@@ -23,7 +22,7 @@ Click "As Key Worker" Link
     Wait Until Keyword Succeeds  20  0  Click Element   ${KEY_WORKER_LINK}
 
 Check 'Assignments' Page Displays
-    Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${ASSIGNMENT_PAGE}
+    Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${MY_ASSIGNMENT_PAGE}
 
 
 Check Worker Full Name Displays On The Page

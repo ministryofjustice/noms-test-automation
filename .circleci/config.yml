@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     machine:
-      docker_layer_caching: false
+      docker_layer_caching: true
     working_directory: ~/repo
     steps:
       - checkout
@@ -11,7 +11,6 @@ jobs:
 #      Get rid of dangling images
       - run: docker ps -a
       - run: docker image list
-#      - run: docker rmi $(docker images -q --filter "dangling=true")
 
       - run: docker build -t noms .
       - run: docker run --name app noms
@@ -22,7 +21,7 @@ jobs:
           destination: tr1
 
 #      remove all Exited containers
-      - run: sudo docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs sudo docker rm
+      - run: sudo docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm
 
 #      - store_test_results:
 #          path: test-reports/output.xml

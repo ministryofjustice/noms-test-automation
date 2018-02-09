@@ -1,7 +1,7 @@
 *** Settings ***
 
 Documentation    Global data file for test agnostic data
-
+Library  SeleniumLibrary   timeout=1 minutes  implicit_wait=10  run_on_failure=Nothing
 *** Variables ***
 
 ${BROWSER} =  ff
