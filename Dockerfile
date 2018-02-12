@@ -33,5 +33,5 @@ CMD ["pybot", "-d", "Results", "Tests/"]
 # Chrome - This is been used for local container
 #docker run -v `pwd`/reports:/opt/robotframework/reports:Z    -v `pwd`:/opt/robotframework/tests:Z    -e BROWSER=chrome    ppodgorsek/robot-framework:latest
 #
-## Firefox - This is been used for local container 
+## Firefox - This is been used for local container
 #docker run -v `pwd`/reports:/opt/robotframework/reports:Z    -v `pwd`:/opt/robotframework/tests:Z    -e BROWSER=firefox    ppodgorsek/robot-framework:latest
