@@ -5,7 +5,7 @@ Resource  ../../Data/Global_Data.robot
 *** Variables ***
 ${OFFENDER_SEARCH_RESULT_PAGE} =   //h1[contains(.//text(), ' Search results ')]
 ${OFFENDER_SEARCH_RESULT_TABLE} =   //div[contains(@class, 'booking-table')]
-${OFFENDER_DETAILS_TAB} =   //div[contains(.//text(), 'Offender details')]/div[1]
+${PERSONAL_DETAILS_TAB} =   //div[contains(.//text(), 'Personal details')]/div[1]
 ${OFFENDER_ALDERTON} =   //span[contains(.//text(), '${SEARCH_RESULTS.a}')]/div/span
 ${GRID_VIEW} =   //div[contains(.//text(), 'Grid')]
 ${SORT_BY} =   //span[contains(.//text(), 'Sort by:')]
@@ -25,8 +25,8 @@ Check The Table Column Headers Are Correct
 Select Offender "Alderton"
     Wait Until Keyword Succeeds  10  0  Click Element  ${OFFENDER_ALDERTON}
 
-Offender Details Tab Displays
-    Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${OFFENDER_DETAILS_TAB}
+Personal Details Tab Displays
+    Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${PERSONAL_DETAILS_TAB}
 
 Select "Grid" View
     Capture Page Screenshot

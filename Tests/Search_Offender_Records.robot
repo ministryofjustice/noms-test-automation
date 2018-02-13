@@ -1,6 +1,5 @@
 *** Settings ***
-Documentation    As a prison officer, i want to search for offenders
-                 ...  so that i know who the prisoners are.
+Documentation    Search offender records (includes blank, valid and invalid searches)
 Resource  ../StepDefs/Search_Offender_Records_Step_Def.robot
 Resource  ./../Resources/Common.robot
 

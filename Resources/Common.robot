@@ -14,7 +14,7 @@ Resource  ../Resources/PO/SearchOffenderRecords.robot
 Resource  ../Resources/PO/SearchOffenderResults.robot
 Resource  ../Resources/PO/ViewAssignments.robot
 Resource  ../Resources/PO/ViewOffenderHeaderRecord.robot
-
+Resource  ../Resources/PO/FooterLinkValidation.robot
 
 
 
@@ -38,8 +38,8 @@ Chrome true Headless
 
 Begin Web Test
 
-    Firefox true headless
-#    Chrome true Headless
+#    Firefox true headless
+   Chrome true Headless
 
 #    Open Browser  about:blank  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES}
 #    Maximize Browser Window

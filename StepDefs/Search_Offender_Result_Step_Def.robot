@@ -25,8 +25,8 @@ User Logs in Successfully
 Selects [Offender]
     SearchOffenderResults.Select Offender "Alderton"
 
-[Offender] Details Tab Displays
-    SearchOffenderResults.Offender Details Tab Displays
+[Personal] Details Tab Displays
+    SearchOffenderResults.Personal Details Tab Displays
 
 Selects [Grid] View Option
     SearchOffenderResults.Select "Grid" View

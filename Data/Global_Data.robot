@@ -7,6 +7,7 @@ Documentation    Global data file for test agnostic data
 ${BROWSER} =  ff
 #${BROWSER} =  phantomjs
 ${START_URL}=  https://notm-dev.hmpps.dsd.io/login
+${START_URL_STAGE} =  https://notm-stage.hmpps.dsd.io/login
 ${REMOTE_URL}
 &{CAPABILITIES}
 ${VALID_ADMIN_USER} =  ZHAMMED

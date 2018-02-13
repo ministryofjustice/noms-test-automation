@@ -36,11 +36,11 @@ Scenario 3: Validate The [Grid & List] View Functions
     Then Validate [Sort By Name] Option Is No Longer Display
     And Home Page Displays If Breadcrumb Is Selected
 
-Scenario 4: Check That Selecting An Offender Takes User To Offender Details Tab
+Scenario 4: Check That Selecting An Offender Takes User To Personal Details Tab
     [Tags]  [JIRA: EA-8]    [JIRA: EM-79]
     Given Admin User Logs Into [NOMIS]
     When User Logs in Successfully
     And Selects [Search] Button
     When Selects [Offender]
-    Then [Offender] Details Tab Displays
+    Then [Personal] Details Tab Displays
 

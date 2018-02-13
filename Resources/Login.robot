@@ -62,3 +62,6 @@ Login As Keyworker User
     EnterUserName  ${VALID_KEYWORKER_USER}
     EnterPassword  ${VALID_KEYWORKER_PASSWORD}
     LoginPage.Credentials
+
+Go To Home Page
+    Load Login Page
