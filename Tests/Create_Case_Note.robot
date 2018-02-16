@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation    Case Note creation tests
 Resource  ../StepDefs/create_case_note_Step_Def.robot
-Resource  ./../Resources/Common.robot
 
 Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test

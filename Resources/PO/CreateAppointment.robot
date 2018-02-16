@@ -1,5 +1,4 @@
 *** Settings ***
-Library  Selenium2Library
 Resource  ../../Data/Global_Data.robot
 
 *** Variables ***

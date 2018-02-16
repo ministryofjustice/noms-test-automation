@@ -1,7 +1,5 @@
 *** Settings ***
 Documentation    This is a Page Object that holds all the keywords for the top menu items
-Library  Selenium2Library
-Library  DateTime
 
 *** Variables ***
 

@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation    This is the Page Object for the Footer links
 Resource  ../../Data/Global_Data.robot
-Library  Selenium2Library
 
 *** Variables ***
 ${TERMS_&_CONDITIONS_LINK} =  //div/div/div[contains(.//text(), 'Terms and conditions')]

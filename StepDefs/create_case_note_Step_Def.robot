@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    Checks to ensure a new case note can be created.
 Resource   ../Resources/PO/CreateCaseNote.robot
+Resource  ./../Resources/Common.robot
 
 *** Keywords ***
 

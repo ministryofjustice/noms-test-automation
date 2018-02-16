@@ -1,11 +1,6 @@
 *** Settings ***
 Documentation  This is the common keyword file holding keywords to elements of the application that are used in many tests
 
-
-Library  Selenium2Library
-Library  OperatingSystem
-Library  Collections
-
 Resource  ../Data/Global_Data.robot
 Resource  ../Resources/PO/Toolbar.robot
 Resource  ../Resources/PO/LoginPage.robot
@@ -14,7 +9,7 @@ Resource  ../Resources/PO/SearchOffenderRecords.robot
 Resource  ../Resources/PO/SearchOffenderResults.robot
 Resource  ../Resources/PO/ViewAssignments.robot
 Resource  ../Resources/PO/ViewOffenderHeaderRecord.robot
-Resource  ../Resources/PO/FooterLinkValidation.robot
+Resource  ../Resources/PO/OffenderRecordTabs.robot
 
 
 
@@ -38,8 +33,8 @@ Chrome true Headless
 
 Begin Web Test
 
-#    Firefox true headless
-   Chrome true Headless
+    Firefox true headless
+#    Chrome true Headless
 
 #    Open Browser  about:blank  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES}
 #    Maximize Browser Window
