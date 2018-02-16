@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation    Login Validation Tests
 Resource  ../StepDefs/Login_Validation_Step_Def.robot
-Resource  ./../Resources/Common.robot
 
 Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
