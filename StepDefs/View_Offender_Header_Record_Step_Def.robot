@@ -20,8 +20,8 @@ Selects [Search] Button
 Selects The [Offender]
     ViewOffenderHeaderRecord.Select The "Offender"
 
-[Offender] Details Tab Displays
-    SearchOffenderResults.Personal Details Tab Displays
+[Personal] Details Page Displays
+    SearchOffenderResults.Personal Details Page Displays
 
 Validate The Offender [Header Details Record]
     ViewOffenderHeaderRecord.Check Table Header Details   ${OFFENDER_HEADER_RECORD.prisonerNo}   ${OFFENDER_HEADER_RECORD.keyWorker}

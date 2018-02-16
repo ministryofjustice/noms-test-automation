@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 #FROM pyhton:2.7.14-stretch
 
-FROM ppodgorsek/robot-framework
+#FROM ppodgorsek/robot-framework
 
 WORKDIR /app
 

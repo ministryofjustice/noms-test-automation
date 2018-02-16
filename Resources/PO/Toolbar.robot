@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation    This is a Page Object that holds all the keywords for the top menu items
+Library  DateTime
 
 *** Variables ***
 
@@ -7,15 +8,15 @@ ${HOME} =  //h1[contains(.//text(), 'Hello')]
 ${UNBOUNDLE_CAPACITY_PAGE} =  //h1[contains(.//text(), 'Unbundled Capacity')]
 ${HAMBURGER} =  //span[contains(.//text(), '(HMP)')]
 ${LOGOUT_BUTTON} =  //a[contains(., 'Log out')]
-
+${VIEW_ASSIGNMENTS_TEXT} =  //h1[contains(.//text(), ' View your assignments ')]
 ${HOME_W} =  //h1[contains(.//text(), '')]
-${HMPPS_HOME} =  //a[contains(.//text(), 'HMPPS')]
+${HMPPS_HOME} =  xpath=//a[contains(.//text(), 'Home')]  #//a[contains(.//text(), 'HMPPS')]
 
 *** Keywords ***
 
 Check User Is On The "Home" Page
-    Wait Until Keyword Succeeds  10  0  Welcome User
-    Wait Until Keyword Succeeds  10  0  Page Should Contain  ${hello_user}
+    Capture Page Screenshot
+    Wait Until Page Contains Element  ${VIEW_ASSIGNMENTS_TEXT}  timeout=1 minutes
 
 Logout Of App
     Click Element  ${LOGOUT_BUTTON}
@@ -28,5 +29,5 @@ Welcome User
     Log To Console  ${hello_user}
     Set Suite Variable  ${hello_user}
 
-Select Breadcrumb
-    Click Element   ${HMPPS_HOME}
+Select The "Home" Link
+    Wait Until Keyword Succeeds  20  0  Click Element    ${HMPPS_HOME}

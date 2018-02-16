@@ -6,7 +6,7 @@ Resource  ../../Data/Global_Data.robot
 ${VIEW_ASSIGNMENTS} =   //h1[contains(.//text(), ' View your assignments ')]
 ${KEY_WORKER_LINK} =   //a[contains(.//text(), 'As Key Worker')]
 
-${ASSIGNMENT_PAGE} =   //a[contains(.//text(), 'Assignments')]
+${MY_ASSIGNMENT_PAGE} =   //a[contains(.//text(), 'My assignments')]
 ${WORKER_FULL_NAME} =   //div[@class='fMHyRU'][contains(.//text(), '')]
 
 *** Keywords ***
@@ -18,10 +18,11 @@ As Key Worker Link Is Available
     Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${KEY_WORKER_LINK}
 
 Click "As Key Worker" Link
+    Capture Page Screenshot
     Wait Until Keyword Succeeds  20  0  Click Element   ${KEY_WORKER_LINK}
 
 Check 'Assignments' Page Displays
-    Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${ASSIGNMENT_PAGE}
+    Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${MY_ASSIGNMENT_PAGE}
 
 
 Check Worker Full Name Displays On The Page

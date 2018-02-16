@@ -49,8 +49,8 @@ Enters Offender's [Surname] Into The [Search] Field
     LoginPage.Wait For Page Ready     ${SEARCH_BOX}
     SearchOffenderRecords.Enter Search Value  ${SEARCH_RESULTS.offenderSurname}
 
-Check That Offender's Details Page Displays
-    SearchOffenderRecords.Offender Details Page Displays
+Check That Personal's Details Page Displays
+    SearchOffenderResults.Personal Details Page Displays
 
 Enters Offender's [First Name] Into The [Search] Field
     LoginPage.Wait For Page Ready     ${SEARCH_BOX}
