@@ -26,7 +26,7 @@ Enter Search Value
 
 Click "Search" Button
     Capture
-    Wait Until Keyword Succeeds  10  0  Click Element   ${SEARCH_BUTTON}
+    Wait Until Keyword Succeeds  10  0  Press Key   ${SEARCH_BUTTON}  \\13
 
 No Matching Message Displays
     Page Should Contain Element    ${NO_MATCHING_RECORD}

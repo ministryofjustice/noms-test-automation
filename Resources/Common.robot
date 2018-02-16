@@ -1,11 +1,6 @@
 *** Settings ***
 Documentation  This is the common keyword file holding keywords to elements of the application that are used in many tests
 
-
-Library  SeleniumLibrary
-Library  OperatingSystem
-Library  Collections
-
 Resource  ../Data/Global_Data.robot
 Resource  ../Resources/PO/Toolbar.robot
 Resource  ../Resources/PO/LoginPage.robot
@@ -14,6 +9,7 @@ Resource  ../Resources/PO/SearchOffenderRecords.robot
 Resource  ../Resources/PO/SearchOffenderResults.robot
 Resource  ../Resources/PO/ViewAssignments.robot
 Resource  ../Resources/PO/ViewOffenderHeaderRecord.robot
+Resource  ../Resources/PO/OffenderRecordTabs.robot
 
 
 

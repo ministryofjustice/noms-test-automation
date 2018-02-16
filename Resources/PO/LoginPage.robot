@@ -14,10 +14,12 @@ Load
 
 Input Username
     [Arguments]    ${username}
+    Wait For Page Ready    name=username
     Input Text    name=username   ${username}
 
 Input Password
     [Arguments]    ${password}
+    Wait For Page Ready    password
     Input Text    password    ${password}
 
 Submit Credentials
@@ -37,5 +39,5 @@ Check For "Required" Text Displays
 
 Wait For Page Ready
     [Arguments]     ${element}
-    Sleep  10s
+    Wait Until Page Contains Element    ${element}  timeout=1 minutes
     Focus  ${element}
