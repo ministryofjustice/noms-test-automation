@@ -28,7 +28,7 @@ Selects [Offender]
     SearchOffenderResults.Select Offender "Alderton"
 
 [Personal] Details Tab Displays
-    SearchOffenderResults.Personal Details Tab Displays
+    SearchOffenderResults.Personal Details Page Displays
 
 Validate [Add appointment] Link Is Available
     CreateAppointment.Validate "Add appointment" Link

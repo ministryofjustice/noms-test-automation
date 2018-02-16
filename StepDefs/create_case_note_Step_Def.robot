@@ -35,7 +35,7 @@ Enters Offender's [Name] Into The [Search] Field
     SearchOffenderRecords.Enter Search Value  ${OFFENDER_HEADER_RECORD.name}
 
 [Offender] Details Tab Displays
-    SearchOffenderResults.Personal Details Tab Displays
+    SearchOffenderResults.Personal Details Page Displays
 
 [Add Appointment] Link Is On The Page
     ViewOffenderHeaderRecord.Check "Add Appointment" Link Is Available
