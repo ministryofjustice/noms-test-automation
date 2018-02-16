@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3462538a-3722-4353-a16d-f583199b0d5e" name="Default" comment="Fixed tests to accommodate new changes mad to the app.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Resources/PO/OffenderRecordTabs.robot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StepDefs/Offender_Record_Tabs_Step_Def.robot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Tests/Offender_Record_Tabs.robot" />
+    <list default="true" id="3462538a-3722-4353-a16d-f583199b0d5e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Data/Global_Data.robot" afterPath="$PROJECT_DIR$/Data/Global_Data.robot" />
-      <change beforePath="$PROJECT_DIR$/Resources/Common.robot" afterPath="$PROJECT_DIR$/Resources/Common.robot" />
-      <change beforePath="$PROJECT_DIR$/Resources/Login.robot" afterPath="$PROJECT_DIR$/Resources/Login.robot" />
-      <change beforePath="$PROJECT_DIR$/Resources/PO/LoginPage.robot" afterPath="$PROJECT_DIR$/Resources/PO/LoginPage.robot" />
-      <change beforePath="$PROJECT_DIR$/Resources/PO/SearchOffenderRecords.robot" afterPath="$PROJECT_DIR$/Resources/PO/SearchOffenderRecords.robot" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,11 +58,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
+            <state relative-caret-position="459">
               <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -249,13 +251,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515676058621</updated>
-    </task>
-    <task id="LOCAL-00061" summary="circleci config">
-      <created>1516985186770</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1516985186770</updated>
     </task>
     <task id="LOCAL-00062" summary="circleci config">
       <created>1517225288131</created>
@@ -593,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518186196338</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Offender [Personal Details tab &amp; sub-tabs] test">
+      <created>1518786478392</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1518786478392</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -641,7 +643,8 @@
     <MESSAGE value="View Offender Header Record" />
     <MESSAGE value="Config" />
     <MESSAGE value="Fixed tests to accommodate new changes mad to the app." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed tests to accommodate new changes mad to the app." />
+    <MESSAGE value="Offender [Personal Details tab &amp; sub-tabs] test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Offender [Personal Details tab &amp; sub-tabs] test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -961,14 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Common.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-382">
@@ -1005,8 +1000,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="459">
           <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding />
         </state>
       </provider>
