@@ -37,7 +37,7 @@ Scenario 3: Validate The [Grid & List] View Functions
     And Home Page Displays If Breadcrumb Is Selected
 
 Scenario 4: Check That Selecting An Offender Takes User To Offender Details Tab
-    [Tags]  [JIRA: EA-8]    [JIRA: EM-79]   Smoke
+    [Tags]  [JIRA: EA-8]    [JIRA: EM-79]
     Given Admin User Logs Into [NOMIS]
     When User Logs in Successfully
     And Selects [Search] Button

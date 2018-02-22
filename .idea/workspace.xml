@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3462538a-3722-4353-a16d-f583199b0d5e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
-      <change beforePath="$PROJECT_DIR$/Resources/PO/SearchOffenderResults.robot" afterPath="$PROJECT_DIR$/Resources/PO/SearchOffenderResults.robot" />
-      <change beforePath="$PROJECT_DIR$/Resources/PO/ViewAssignments.robot" afterPath="$PROJECT_DIR$/Resources/PO/ViewAssignments.robot" />
-      <change beforePath="$PROJECT_DIR$/Tests/Login_Validation.robot" afterPath="$PROJECT_DIR$/Tests/Login_Validation.robot" />
-      <change beforePath="$PROJECT_DIR$/Tests/Search_Offender_Records.robot" afterPath="$PROJECT_DIR$/Tests/Search_Offender_Records.robot" />
       <change beforePath="$PROJECT_DIR$/Tests/Search_Offender_Result.robot" afterPath="$PROJECT_DIR$/Tests/Search_Offender_Result.robot" />
-      <change beforePath="$PROJECT_DIR$/Tests/View_Assignments.robot" afterPath="$PROJECT_DIR$/Tests/View_Assignments.robot" />
-      <change beforePath="$PROJECT_DIR$/Tests/View_Offender_Header_Record.robot" afterPath="$PROJECT_DIR$/Tests/View_Offender_Header_Record.robot" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="View_Offender_Header_Record.robot" pinned="false" current-in-tab="true">
+      <file leaf-file-name="View_Offender_Header_Record.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/View_Offender_Header_Record.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -41,11 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search_Offender_Result.robot" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Search_Offender_Result.robot" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/Search_Offender_Result.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="341">
+              <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchOffenderResults.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/PO/SearchOffenderResults.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -130,12 +133,12 @@
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/Tests/Search_Offender_Records.robot" />
         <option value="$PROJECT_DIR$/Tests/Login_Validation.robot" />
-        <option value="$PROJECT_DIR$/Tests/Search_Offender_Result.robot" />
         <option value="$PROJECT_DIR$/Tests/View_Offender_Header_Record.robot" />
         <option value="$PROJECT_DIR$/Resources/PO/SearchOffenderResults.robot" />
         <option value="$PROJECT_DIR$/Tests/View_Assignments.robot" />
         <option value="$PROJECT_DIR$/Resources/PO/ViewAssignments.robot" />
         <option value="$PROJECT_DIR$/Resources/Common.robot" />
+        <option value="$PROJECT_DIR$/Tests/Search_Offender_Result.robot" />
       </list>
     </option>
   </component>
@@ -233,13 +236,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515676058621</updated>
-    </task>
-    <task id="LOCAL-00063" summary="circleci config">
-      <created>1517225610678</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1517225610678</updated>
     </task>
     <task id="LOCAL-00064" summary="circleci config">
       <created>1517226302358</created>
@@ -577,13 +573,21 @@
       <option name="project" value="LOCAL" />
       <updated>1518787610127</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Added Smoke tag to tests">
+      <created>1519300892655</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1519300892655</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1914" y="23" width="1920" height="990" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24697208" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24697208" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -615,7 +619,8 @@
     <MESSAGE value="Fixed tests to accommodate new changes mad to the app." />
     <MESSAGE value="Offender [Personal Details tab &amp; sub-tabs] test" />
     <MESSAGE value="updated .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated .gitignore" />
+    <MESSAGE value="Added Smoke tag to tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Smoke tag to tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -875,14 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/PO/SearchOffenderResults.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/PO/SearchOffenderRecords.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -947,14 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Search_Offender_Result.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Common.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -975,6 +964,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/PO/SearchOffenderResults.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Search_Offender_Result.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
           <folding />
         </state>
       </provider>
