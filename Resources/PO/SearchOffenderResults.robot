@@ -22,6 +22,7 @@ Check The Table Column Headers Are Correct
 	Wait Until Keyword Succeeds  10  0  Wait Until Page Contains Element  ${OFFENDER_SEARCH_RESULT_TABLE}  timeout=1 minutes
 
 Select Offender "Alderton"
+    Wait Until Page Contains Element  ${OFFENDER_ALDERTON}  timeout=1 minutes
     Capture Page Screenshot
     Wait Until Keyword Succeeds  10  0  Click Element  ${OFFENDER_ALDERTON}
 

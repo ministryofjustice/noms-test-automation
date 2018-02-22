@@ -22,7 +22,7 @@ Click "As Key Worker" Link
     Wait Until Keyword Succeeds  20  0  Click Element   ${KEY_WORKER_LINK}
 
 Check 'Assignments' Page Displays
-    Wait Until Keyword Succeeds  10  0  Page Should Contain Element    ${MY_ASSIGNMENT_PAGE}
+    Wait Until Keyword Succeeds  10  0  Wait Until Page Contains Element    ${MY_ASSIGNMENT_PAGE}   timeout=1 minutes
 
 
 Check Worker Full Name Displays On The Page

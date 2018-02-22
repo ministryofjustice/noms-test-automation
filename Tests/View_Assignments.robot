@@ -12,19 +12,19 @@ Test Teardown  Common.End Web Test
 *** Test Cases ***
 
 Scenario 1: Check [View Assignments] Section Is Available On The Home Page After Successful Login
-    [Tags]  [JIRA: EM-143]
+    [Tags]  [JIRA: EM-143]  Smoke
     Given Keyworker User Logs Into [NOMIS]
     When [Nomis] Home Page Displays
     Then Check That [View Assignments] Section Is Available
 
 Scenario 2: Check [Key Worker] Link Is Available On The Home Page After Successful Login
-    [Tags]  [JIRA: EM-143]
+    [Tags]  [JIRA: EM-143]  Smoke
     Given Keyworker User Logs Into [NOMIS]
     When [Nomis] Home Page Displays
     Then Check That [As Key Worker] Link Is Available
 
 Scenario 3: Validate That Selecting [As Key Worker] Link Takes The User To [Assignments] Page
-    [Tags]  [JIRA: EM-143]
+    [Tags]  [JIRA: EM-143]  Smoke
     Given Keyworker User Logs Into [NOMIS]
     When [Nomis] Home Page Displays
     And Selects [As Key Worker] Link

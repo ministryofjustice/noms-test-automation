@@ -27,7 +27,7 @@ RUN GECKODRIVER_VERSION=`wget --no-verbose --output-document - https://api.githu
     chmod +x /opt/geckodriver && \
     ln -fs /opt/geckodriver /usr/local/bin/geckodriver
 
-CMD ["pybot", "-d", "Results", "Tests/"]
+CMD ["pybot", "-d", "Results", "-i", "Smoke", "Tests/"]
 
 
 # Chrome - This is been used for local container

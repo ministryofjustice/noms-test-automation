@@ -11,7 +11,7 @@ Test Teardown  Common.End Web Test
 *** Test Cases ***
 
 Scenario 1: Check [Search Results] Page Displays When Search For Offenders
-    [Tags]  [JIRA: EA-8]    [JIRA: EM-79]
+    [Tags]  [JIRA: EA-8]    [JIRA: EM-79]   Smoke
     Given Admin User Logs Into [NOMIS]
     When User Logs in Successfully
     And Selects [Search] Button
@@ -37,7 +37,7 @@ Scenario 3: Validate The [Grid & List] View Functions
     And Home Page Displays If Breadcrumb Is Selected
 
 Scenario 4: Check That Selecting An Offender Takes User To Offender Details Tab
-    [Tags]  [JIRA: EA-8]    [JIRA: EM-79]
+    [Tags]  [JIRA: EA-8]    [JIRA: EM-79]   Smoke
     Given Admin User Logs Into [NOMIS]
     When User Logs in Successfully
     And Selects [Search] Button
