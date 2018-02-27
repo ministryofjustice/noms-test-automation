@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Checks to ensure a new appointment can be created.
-Resource   ../Resources/PO/CreateAppointment.robot
+Resource  ./../Resources/Common.robot
 
 *** Keywords ***
 
@@ -20,10 +20,6 @@ Selects [Search] Button
 Check That [Search Results] Page Displays
     SearchOffenderResults.Offender Search Results Page Displays
 
-Validate The Table Column Headers On [Search Results] Page
-    SearchOffenderResults.Check The Table Column Headers Are Correct       Name              ID      IEP   Age  Location
-    SearchOffenderResults.Check The Table Column Headers Are Correct    ${SEARCH_RESULTS.a}  A1476AE  Standard  28  COURT
-
 Selects [Offender]
     SearchOffenderResults.Select Offender "Alderton"
 
@@ -36,20 +32,56 @@ Validate [Add appointment] Link Is Available
 Validate The [URL]
     ViewOffenderHeaderRecord.Check The URL
 
-Select "Type" Field
+Select [Type] Field
     CreateAppointment.Select "Type" Field
 
 Select Appointment Type
     CreateAppointment.Select "Appointment Type" From Dropdown
 
-Select "Location" Field
+Selects [Location] Field
     CreateAppointment.Select "Location" Field
 
 Select Appointment location
     CreateAppointment.Select "Appointment Location" From Dropdown
 
-Select Appointment Date
-    CreateAppointment.Select 'Select date' field
+Sets [Appointment] Date To [7 Days] In The Future
+    Common.Go To 7 Days In The Future
 
-#Select start time [Hour]
-#    CreateAppointment.Select start time [Hour]
+Check [Add New Appointment] Page Displays
+    CreateAppointment.Check You are on "Add New Appointment" Page
+
+Sets Appointment [Time] By [Hour & Minutes]
+    Common.Get Hour
+    Common.Get Minute
+
+Selects [Add Appointment] Button
+    CreateAppointment.Select "Add Appointment" Button
+
+Validate The Appointment Is Created Successfully
+    CreateAppointment.Check No Date Error On The Page
+    CreateAppointment.Check No Time Error On The Page
+    Capture
+
+Selects [Add appointment] Link
+    CreateAppointment.Select "Add appointment" Link
+
+Adds [Comment]
+    CreateAppointment.Add Comment To "Appointment"  ${OFFENDER_HEADER_RECORD.name}
+
+Check That [Appointment] Is Not Created
+    CreateAppointment.Check "Time" Error Displays
+    CreateAppointment.Check "Date" Error Displays
+
+Selects Add Appointment Button To Submit The Form
+    CreateAppointment.Add Appointment Button
+    Capture
+
+Check [Appointment Type] Error Message Is Thrown
+    CreateAppointment.Check "Appointment Type" Error Message Displays
+
+[Location] Error Message Displays
+    CreateAppointment.Check "Location" Error Message Displays
+
+[Cancel] Button Is Selected
+    CreateAppointment.Click "Cancel" Button
+

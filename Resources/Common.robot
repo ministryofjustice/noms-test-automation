@@ -10,9 +10,10 @@ Resource  ../Resources/PO/SearchOffenderResults.robot
 Resource  ../Resources/PO/ViewAssignments.robot
 Resource  ../Resources/PO/ViewOffenderHeaderRecord.robot
 Resource  ../Resources/PO/OffenderRecordTabs.robot
+Resource   ../Resources/PO/CreateAppointment.robot
 
-
-
+*** Variables ***
+${date_picker}      //input[@class='form-control']
 
 *** Keywords ***
 
@@ -43,10 +44,31 @@ Begin Web Test
 End Web Test
     Close All Browsers
 
+Assign ID To Appointment Date Picker
+    Assign Id To Element    //input[@class='form-control']  date_picker_id
+    ${date_picker}  set variable  date_picker_id
+    Set Suite Variable  ${date_picker}
 
-Enter Search Value
-    [arguments]  ${injection_value}
-    input text  ${SEARCH_BOX}  ${injection_value}
+Go To 7 Days In The Future
+    Assign ID To Appointment Date Picker
+    ${date_to_select}=  Get Current Date    UTC     +7 days  ${DATE_FORMAT}
+    Execute Javascript      document.getElementById('${date_picker}').value="${date_to_select}";
+#    Execute Javascript      $('#${date_picker}').val("${date_to_select}"); return ""
+    Log  ${date_to_select}
+    Capture Page Screenshot
+
+Get Hour
+    Assign Id To Element    name=hours  hour_id
+    ${hour_field_id}  set variable  hour_id
+    ${hour}=   Get Current Date   result_format=%H
+    Execute Javascript  document.getElementById('${hour_field_id}').value="${hour}";
+    Capture Page Screenshot
+
+Get Minute
+    Assign Id To Element    name=minutes  minute_id
+    ${mnute_field_id}  set variable  minute_id
+    Execute Javascript      document.getElementById('${mnute_field_id}').value="10"; return ""
+    Capture Page Screenshot
 
 
 Wait Until Page Is Fully Loaded

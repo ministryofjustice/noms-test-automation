@@ -4,6 +4,7 @@ Documentation    Global data file for test agnostic data
 Library  SeleniumLibrary   timeout=1 minutes  implicit_wait=10  run_on_failure=Nothing
 Library  OperatingSystem
 Library  Collections
+Library  DateTime
 *** Variables ***
 
 ${BROWSER} =  ff
@@ -18,6 +19,7 @@ ${VALID_KEYWORKER_USER} =  DBULL_KEYWORKER
 ${VALID_KEYWORKER_PASSWORD} =  password123456
 ${INVALID_PWORD} =  123456789@ttn
 ${INVALID_USER} =   IncorrectUser
+${DATE_FORMAT}      %Y/%m/%d
 
 
 #${REMOTE_URL}           http://127.0.0.1:4444/wd/hub

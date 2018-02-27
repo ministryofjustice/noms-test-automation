@@ -6,7 +6,7 @@ ${BOOKING_HEADER_DETAILS}       //div[@class=('header-details')]
 ${KEY_WORKER}       //div[contains(.//text(), 'Key worker')]/b/span[contains(.//text(), '')]
 ${OFFENDER} =   //span[contains(.//text(), '${OFFENDER_HEADER_RECORD.name}')]/div/span
 ${ADD_CASE_NOTE_LINK} =   //a[@href='/bookings/details/addCaseNote'][contains(.//text(), 'Add case note')]
-${ADD_APPOINTMENT_LINK} =   //div[2]/a[@href='/bookings/details/addAppointment'] [contains(.//text(), 'Add appointment')]
+#${ADD_APPOINTMENT_LINK} =   //div[2]/a[@href='/bookings/details/addAppointment'] [contains(.//text(), 'Add appointment')]
 ${ADD_CASE_NOTE_PAGE} =   //h1[contains(.//text(), 'Add new case note')]
 ${PAGE_URL}     https://notm-dev.hmpps.dsd.io/bookings/details/addCaseNote
 
