@@ -45,14 +45,14 @@ Select Appointment location
     CreateAppointment.Select "Appointment Location" From Dropdown
 
 Sets [Appointment] Date To [7 Days] In The Future
-    Common.Go To 7 Days In The Future
+    CreateAppointment.Go To 7 Days In The Future
 
 Check [Add New Appointment] Page Displays
     CreateAppointment.Check You are on "Add New Appointment" Page
 
 Sets Appointment [Time] By [Hour & Minutes]
-    Common.Get Hour
-    Common.Get Minute
+    CreateAppointment.Get Hour
+    CreateAppointment.Get Minute
 
 Selects [Add Appointment] Button
     CreateAppointment.Select "Add Appointment" Button
@@ -84,4 +84,15 @@ Check [Appointment Type] Error Message Is Thrown
 
 [Cancel] Button Is Selected
     CreateAppointment.Click "Cancel" Button
+
+Sets [Appointment] Date To [8 Days] In The Future
+    CreateAppointment.Go To 8 Days In The Future
+
+Sets [Appointment] Date To [14 Days] In The Future
+    CreateAppointment.Go To 14 Days In The Future
+
+Sets [Appointment] Date To [Current Day]
+    CreateAppointment.Set To Today's Date
+
+
 

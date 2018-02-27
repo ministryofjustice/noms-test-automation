@@ -20,6 +20,7 @@ ${TIME_ERROR} =  //span[contains(.//text(), 'Please select a start time')]
 ${APPOINTMENT_TYPE_ERROR} =  //span[contains(.//text(), 'Please select an appointment type')]
 ${LOCATION_ERROR} =  //span[contains(.//text(), 'Please select a location')]
 ${CANCEL_BUTTON} =  //button[contains(.//text(), ' Cancel')]
+${date_picker}      //input[@class='form-control']
 
 *** Keywords ***
 Validate "Add appointment" Link
@@ -78,3 +79,52 @@ Check "Appointment Type" Error Message Displays
 
 Check "Location" Error Message Displays
     Page Should Contain Element     ${LOCATION_ERROR}
+
+
+Assign ID To Appointment Date Picker
+    Assign Id To Element    //input[@class='form-control']  date_picker_id
+    ${date_picker}  set variable  date_picker_id
+    Set Suite Variable  ${date_picker}
+
+Go To 7 Days In The Future
+    Assign ID To Appointment Date Picker
+    ${date_to_select}=  Get Current Date    UTC     +7 days  ${DATE_FORMAT}
+    Execute Javascript      document.getElementById('${date_picker}').value="${date_to_select}";
+#    Execute Javascript      $('#${date_picker}').val("${date_to_select}"); return ""
+    Log  ${date_to_select}
+    Capture Page Screenshot
+
+Get Hour
+    Assign Id To Element    name=hours  hour_id
+    ${hour_field_id}  set variable  hour_id
+    ${hour}=   Get Current Date   result_format=%H
+	${hour}=   Convert To Integer   ${hour}
+	${hourmodified}=   Evaluate   ${hour}+2
+	Log  ${hourmodified}
+    Execute Javascript  document.getElementById('${hour_field_id}').value="${hourmodified}";
+    Capture Page Screenshot
+
+Get Minute
+    Assign Id To Element    name=minutes  minute_id
+    ${mnute_field_id}  set variable  minute_id
+    Execute Javascript      document.getElementById('${mnute_field_id}').value="10"; return ""
+    Capture Page Screenshot
+
+Go To 8 Days In The Future
+    Assign ID To Appointment Date Picker
+    ${date_to_select}=  Get Current Date    UTC     +8 days  ${DATE_FORMAT}
+    Execute Javascript      document.getElementById('${date_picker}').value="${date_to_select}";
+    Log  ${date_to_select}
+
+
+Go To 14 Days In The Future
+    Assign ID To Appointment Date Picker
+    ${date_to_select}=  Get Current Date    UTC     +14 days  ${DATE_FORMAT}
+    Execute Javascript      document.getElementById('${date_picker}').value="${date_to_select}";
+    Log  ${date_to_select}
+
+Set To Today's Date
+    Assign ID To Appointment Date Picker
+    ${date_to_select}=  Get Current Date    UTC     0 days  ${DATE_FORMAT}
+    Execute Javascript      document.getElementById('${date_picker}').value="${date_to_select}";
+    Log  ${date_to_select}
