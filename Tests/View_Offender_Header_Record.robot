@@ -27,7 +27,7 @@ Scenario 2: Validate The [Table Header Details] On [Offender Details] Page
     Then Validate The Offender [Header Details Record]
 
 Scenario 3: Check [Table Header Details] For Offender With [No Keyworker] Assigned
-    [Tags]  [JIRA: EM-133]  Smoke
+    [Tags]  [JIRA: EM-133]
     Given Admin User Logs Into [NOMIS]
     When Enters No Keyworker Offender's [Name] Into The [Search] Field
     And Selects [Search] Button
