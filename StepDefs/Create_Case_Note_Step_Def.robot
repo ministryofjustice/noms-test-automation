@@ -1,6 +1,5 @@
 *** Settings ***
 Documentation    Checks to ensure a new case note can be created.
-Resource   ../Resources/PO/CreateCaseNote.robot
 Resource  ./../Resources/Common.robot
 
 *** Keywords ***
@@ -61,17 +60,23 @@ Selects [SubType] From Dropdown Menu
 Selects [History Sheet Entry] From Dropdown Menu
     CreateCaseNote.Select "History Sheet Entry" From Dropdown
 
-Enters case note text
-    CreateCaseNote.Enter case note text
+Enters Case Note Text
+    CreateCaseNote.Enter Case Note Text     ${CASE_NOTE_TEXTS.new}
 
-Selects [Edit] link
-    CreateCaseNote.Select Edit Link
+Selects [Save Case Note]
+    CreateCaseNote.Save Case Note
 
-#Selects [Occurrence Date]
-#    CreateCaseNote.Select past date
+Sets [Time] By [Hour & Minutes]
+    CreateCaseNote.Get Current Hour
 
-Selects [Save case note]
-    CreateCaseNote.Save case note
+Sets Date To [Future Date]
+    CreateCaseNote.Get 3 Days In The Future
 
-Validate case note text is present
-    CreateCaseNote.Check case note text is present
+Check [Case Note] Tab Displays
+    OffenderRecordTabs.Check "Case Notes" Tab Displays
+
+Sets Date To [Previous Date]
+    CreateCaseNote.Get 2 Days In The Past
+
+Check Error Message Is Shown
+    CreateCaseNote.Check "Case Note" Error Message

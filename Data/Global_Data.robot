@@ -45,3 +45,5 @@ ${DATE_FORMAT}      %Y/%m/%d
 &{OFFENDER_WITH_NO_KEYWORKER}    prisonerNo=A1588AE  keyWorker=--   name=Ricardson, Jeffery  iep=Standard
     ...  alerts=0 active | 0 inactive   location=LEEDS (HMP)    noKeyWorkerAssigned=Ricardson, Jeffery
 
+&{CASE_NOTE_TEXTS}      new=Initial note    edit=Amended note
+

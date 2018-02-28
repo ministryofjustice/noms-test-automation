@@ -58,7 +58,8 @@ Select "Case Notes" Tab
 Select "Key Dates" Tab
     Click Any Element   ${KEY_DATES_TAB}
 
-
+Check "Case Notes" Tab Displays
+    Wait Until Element Becomes Available    ${CASE_NOTE_TAB}
 
 
 Wait Until Element Becomes Available
