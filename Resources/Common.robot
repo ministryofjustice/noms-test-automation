@@ -12,6 +12,7 @@ Resource  ../Resources/PO/ViewOffenderHeaderRecord.robot
 Resource  ../Resources/PO/OffenderRecordTabs.robot
 Resource   ../Resources/PO/CreateAppointment.robot
 Resource   ../Resources/PO/CreateCaseNote.robot
+Resource   ../Resources/PO/AmendCaseNote.robot
 
 *** Keywords ***
 
