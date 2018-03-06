@@ -5,7 +5,7 @@ Resource  ../StepDefs/Create_Case_Note_Step_Def.robot
 Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
-#  pybot -d Results Tests/Create_Case_Note.robot
+#  pybot -d Results Tests/01__Create_Case_Note.robot
 
 *** Test Cases ***
 Scenario 1: Check That Selecting [Add Case Note] Link Takes User To [Add New Case Note] Page
