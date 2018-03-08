@@ -21,3 +21,9 @@ Remove old container
 ===============================================
 1. Run this command to remove the old container: docker rm -f container_name
 
+
+How to run the tests locally with tags
+=======================================
+Use this to run tests with `Smoke` tags only: pybot -d Results -i Smoke Tests
+Use this to exclude tests with `BUG` tags only: pybot -d Results --exclude BUG Tests
+

@@ -7,7 +7,6 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 #  pybot -d Results Tests/Search_Offender_Records.robot
-#  To Run tests with tags, use this: pybot -d Results -i Smoke Tests
 
 *** Test Cases ***
 
