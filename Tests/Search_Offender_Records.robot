@@ -60,16 +60,16 @@ Scenario 7: Check That No Record Is Returned When Search By Offender's [First Na
     And Selects [Search] Button
     Then Check That No Matching Record Message Is Returned
 
-#TODO: This is a regression after changes being made to Search functionality [BUG]
-Scenario 8: Check [404] Status Code Is Returned When [Search] For Offender With Invalid Data "+" Regardless Of [Location]
-    [Tags]  [JIRA: EA-8]
-    Given Admin User Logs Into [NOMIS]
-    When Enters [+] Into The [Search] Field
-    And Selects [Leeds] From Location Dropdown Menu
-    When Selects [Search] Button
-    Then Check That [404] Error Status Code Is Returned
+##TODO: Remove test - no longer valid
+#Scenario 8: Check [404] Status Code Is Returned When [Search] For Offender With Invalid Data "+" Regardless Of [Location]
+#    [Tags]  [JIRA: EA-8]
+#    Given Admin User Logs Into [NOMIS]
+#    When Enters [+] Into The [Search] Field
+#    And Selects [Leeds] From Location Dropdown Menu
+#    When Selects [Search] Button
+#    Then Check That [404] Error Status Code Is Returned
 
-Scenario 9: Validate [Personal Details] Page Returns When Search By Offender's Valid [Surname] At A Specific [Location]
+Scenario 8: Validate [Personal Details] Page Returns When Search By Offender's Valid [Surname] At A Specific [Location]
     [Tags]  [JIRA: EA-8]
     Given Admin User Logs Into [NOMIS]
     When Enters Offender's [Surname] Into The [Search] Field
