@@ -6,7 +6,7 @@ To run test in IE successfully
 4. Turn Off pop up blocker.
 
 
-How to build and run tests
+How to build and run tests locally
 ==============================================================================
 1. Download "Docker" on local machine
 2. Run this command: docker build -t noms .
