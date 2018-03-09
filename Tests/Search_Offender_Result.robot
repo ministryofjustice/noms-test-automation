@@ -17,7 +17,6 @@ Scenario 1: Check [Search Results] Page Displays When Search For Offenders
     And Selects [Search] Button
     Then Check That [Search Results] Page Displays
 
-
 Scenario 2: Validate The Static Table Column Headers Are Correct On [Search Results] Page
     [Tags]  [JIRA: EA-8]    [JIRA: EM-79]
     Given Admin User Logs Into [NOMIS]

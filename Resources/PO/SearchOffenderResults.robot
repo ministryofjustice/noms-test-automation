@@ -19,12 +19,12 @@ Offender Search Results Page Displays
 
 Check The Table Column Headers Are Correct
 	[Arguments]  ${name}  ${id}  ${iep}  ${age}  ${location}
-	Wait Until Keyword Succeeds  10  0  Wait Until Page Contains Element  ${OFFENDER_SEARCH_RESULT_TABLE}  timeout=1 minutes
+	Wait Until Keyword Succeeds  30  0  Wait Until Page Contains Element  ${OFFENDER_SEARCH_RESULT_TABLE}  timeout=1 minutes
 
 Select Offender "Alderton"
     Wait Until Page Contains Element  ${OFFENDER_ALDERTON}  timeout=1 minutes
     Capture Page Screenshot
-    Wait Until Keyword Succeeds  10  0  Click Element  ${OFFENDER_ALDERTON}
+    Wait Until Keyword Succeeds  20  0  Click Element  ${OFFENDER_ALDERTON}
 
 Personal Details Page Displays
     Wait Until Keyword Succeeds  10  0  Wait Until Page Contains Element    ${PERSONAL_DETAILS_PAGE}  timeout=1 minutes
