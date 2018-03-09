@@ -35,8 +35,8 @@ Chrome true Headless
 
 Begin Web Test
 
-#   Firefox true headless
-   Chrome true Headless
+   Firefox true headless
+#  Chrome true Headless
 
 #    Open Browser  about:blank  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=&{CAPABILITIES}
 #    Maximize Browser Window
