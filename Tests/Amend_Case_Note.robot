@@ -9,7 +9,7 @@ Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 Scenario 1: Check That Created [Case Note] Exists
-    [Tags]  [JIRA: EM-133]
+    [Tags]  [JIRA: EM-133] Regression
     Given Admin User Logs Into [NOMIS]
     When Enters Offender's [Name] Into The [Search] Field
     And Selects [Search] Button
@@ -21,7 +21,7 @@ Scenario 1: Check That Created [Case Note] Exists
     And Check [Make Amendment] Button Is Available
 
 Scenario 2: Check User Can Amend Created [Case Note] Successfully
-    [Tags]  [JIRA: EM-133]
+    [Tags]  [JIRA: EM-133] Regression
     Given Admin User Logs Into [NOMIS]
     When Enters Offender's [Name] Into The [Search] Field
     And Selects [Search] Button

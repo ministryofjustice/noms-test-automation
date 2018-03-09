@@ -10,7 +10,7 @@ Test Teardown  Common.End Web Test
 *** Test Cases ***
 
 Scenario 1: Check User Can Logout Of [Nomis] After Been Logged In Successfully With Correct Credentials
-    [Tags]   Smoke
+    [Tags]   Smoke  Regression
     Given Admin User Logs Into [NOMIS]
     When User Selects Submit Button
     Then Check That User Logs in Successfully

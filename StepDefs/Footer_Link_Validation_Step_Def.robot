@@ -1,13 +1,10 @@
 *** Settings ***
 Documentation    Checks to ensure page footer links are present and contain the correct data.
 
-Resource   ../Resources/Common.robot
+Resource  ../Resources/Footer_Link_Validation_Step_Def.robot
+Resource  ../Resources/Common.robot
 
 *** Keywords ***
-
-Check User Is On The "Home" Page
-    Login With Empty Credentials
-#    Login.Go To Home Page
 
 user is on [NOMIS]
     FooterLinkValidation.Go To Home URL
