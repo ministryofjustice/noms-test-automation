@@ -11,13 +11,13 @@ Test Teardown  Common.End Web Test
 *** Test Cases ***
 
 Scenario 1: Check [Search] Field Is Available For User To Search For Offender After Successful Login
-    [Tags]  [JIRA: EA-8]  Smoke
+    [Tags]  [JIRA: EA-8]  Smoke  Regression
     Given Admin User Logs Into [NOMIS]
     When [Nomis] Home Page Displays
     Then Check That [Search] Field Is Available
 
 Scenario 2: Validate That No Record Is Returned When [Search] For Offender With Invalid "*" Character
-    [Tags]  [JIRA: EA-8]
+    [Tags]  [JIRA: EA-8] Regression
     Given Admin User Logs Into [NOMIS]
     When Enters [*] Character Into [Search] Field
     And Selects [Search] Button
@@ -31,46 +31,46 @@ Scenario 3: Validate That No Record Is Returned When [Search] For Offender With 
     And Selects [Search] Button
     Then Check That [400] Error Status Code Is Returned
 
-##TODO: The scenario below could possibly be a bug. Team to confirm
-Scenario 4: Check That No Record Is Returned When [Search] For Offender With "#" Character
-    [Tags]  [JIRA: EA-8] BUG
-    Given Admin User Logs Into [NOMIS]
-    When Enters [#] Character Into [Search] Field
-    And Selects [Search] Button
-    Then Check That Offenders List Is Not Returned
+##TODO: Remove test - no longer valid
+#Scenario 4: Check That No Record Is Returned When [Search] For Offender With "#" Character
+#    [Tags]  [JIRA: EA-8]
+#    Given Admin User Logs Into [NOMIS]
+#    When Enters [#] Character Into [Search] Field
+#    And Selects [Search] Button
+#    Then Check That Offenders List Is Not Returned
 
 Scenario 5: Check All Records Returned When [Search] For Offender With no Data In Search Box But With Specific [Location]
-    [Tags]  [JIRA: EA-8]
+    [Tags]  [JIRA: EA-8]  Regression
     Given Admin User Logs Into [NOMIS]
     When Selects [Leeds] From Location Dropdown Menu
     And Selects [Search] Button
     Then Check That Offenders List Is Returned
 
 Scenario 6: Validate That Personal Details Page Displays When Search By Offender's [Surname]
-    [Tags]  [JIRA: EA-8]
+    [Tags]  [JIRA: EA-8]  Regression
     Given Admin User Logs Into [NOMIS]
     When Enters Offender's [Surname] Into The [Search] Field
     And Selects [Search] Button
     Then Check That Personal's Details Page Displays
 
 Scenario 7: Check That No Record Is Returned When Search By Offender's [First Name]
-    [Tags]  [JIRA: EA-8]
+    [Tags]  [JIRA: EA-8]  Regression
     Given Admin User Logs Into [NOMIS]
     When Enters Offender's [First Name] Into The [Search] Field
     And Selects [Search] Button
     Then Check That No Matching Record Message Is Returned
 
-#TODO: This is a regression after changes being made to Search functionality [BUG]
-Scenario 8: Check [404] Status Code Is Returned When [Search] For Offender With Invalid Data "+" Regardless Of [Location]
-    [Tags]  [JIRA: EA-8]
-    Given Admin User Logs Into [NOMIS]
-    When Enters [+] Into The [Search] Field
-    And Selects [Leeds] From Location Dropdown Menu
-    When Selects [Search] Button
-    Then Check That [404] Error Status Code Is Returned
+##TODO: Remove test - no longer valid
+#Scenario 8: Check [404] Status Code Is Returned When [Search] For Offender With Invalid Data "+" Regardless Of [Location]
+#    [Tags]  [JIRA: EA-8]
+#    Given Admin User Logs Into [NOMIS]
+#    When Enters [+] Into The [Search] Field
+#    And Selects [Leeds] From Location Dropdown Menu
+#    When Selects [Search] Button
+#    Then Check That [404] Error Status Code Is Returned
 
-Scenario 9: Validate [Personal Details] Page Returns When Search By Offender's Valid [Surname] At A Specific [Location]
-    [Tags]  [JIRA: EA-8]
+Scenario 8: Validate [Personal Details] Page Returns When Search By Offender's Valid [Surname] At A Specific [Location]
+    [Tags]  [JIRA: EA-8]  Regression
     Given Admin User Logs Into [NOMIS]
     When Enters Offender's [Surname] Into The [Search] Field
     And Selects [Leeds] From Location Dropdown Menu

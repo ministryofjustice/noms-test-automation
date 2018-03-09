@@ -2,6 +2,7 @@
 Documentation    Check that footer links are present and return the correct information
 Resource  ../StepDefs/Footer_Link_Validation_Step_Def.robot
 
+
 Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 

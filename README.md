@@ -6,7 +6,7 @@ To run test in IE successfully
 4. Turn Off pop up blocker.
 
 
-How to build and run tests
+How to build and run tests locally
 ==============================================================================
 1. Download "Docker" on local machine
 2. Run this command: docker build -t noms .
@@ -25,5 +25,6 @@ Remove old container
 How to run the tests locally with tags
 =======================================
 Use this to run tests with `Smoke` tags only: pybot -d Results -i Smoke Tests
+Use this to tun tests with 'Regression' tags only: pybot -d Results -i Regression Tests
 Use this to exclude tests with `BUG` tags only: pybot -d Results --exclude BUG Tests
 

@@ -12,7 +12,7 @@ Test Teardown  Common.End Web Test
 *** Test Cases ***
 
 Scenario 1: Validate [Personal Details] Tab & It's Contents
-    [Tags]  [JIRA: EM-]
+    [Tags]  [JIRA: EM-]  Regression
     Given Keyworker Logs Into [NOMIS]
     When [Nomis] Home Page Displays
     And Enters Offender's [Name] Into The [Search] Field
@@ -21,6 +21,7 @@ Scenario 1: Validate [Personal Details] Tab & It's Contents
     And Offender Full Personal Details Displays
 
 Scenario 2: Check Both [Add Case Note & Add Appointment] Always Available For All The Tabs
+    [Tags]  Regression
     Given Keyworker Logs Into [NOMIS]
     When Enters Offender's [Name] Into The [Search] Field
     And Selects [Search] Button
@@ -36,6 +37,7 @@ Scenario 2: Check Both [Add Case Note & Add Appointment] Always Available For Al
     Then Validate Both [Add Case Note] & [Add Appointment] Links Available
 
 Scenario 3: Validate The [Quick Look] Tab & Its Contents
+    [Tags]  Regression
     Given Keyworker Logs Into [NOMIS]
     When Enters Offender's [Name] Into The [Search] Field
     And Selects [Search] Button
@@ -44,6 +46,7 @@ Scenario 3: Validate The [Quick Look] Tab & Its Contents
     And Validate [Offence] & [Money] Details
 
 Scenario 4: Check The [Alert] Tab & Its Contents
+    [Tags]  Regression
     Given Keyworker Logs Into [NOMIS]
     When Enters Offender's [Name] Into The [Search] Field
     And Selects [Search] Button
@@ -52,6 +55,7 @@ Scenario 4: Check The [Alert] Tab & Its Contents
     Then Check Informations Available Under [Alerts] Tab
 
 Scenario 5: Validate The [Case Notes] Tab & Its Contents
+    [Tags]  Regression
     Given Keyworker Logs Into [NOMIS]
     When Enters Offender's [Name] Into The [Search] Field
     And Selects [Search] Button
@@ -60,6 +64,7 @@ Scenario 5: Validate The [Case Notes] Tab & Its Contents
     Then Validate [Case Notes] Tab Filter Header
 
 Scenario 6: Check The [Key Dates] Tab & Its Contents
+    [Tags]  Regression
     Given Keyworker Logs Into [NOMIS]
     When Enters Offender's [Name] Into The [Search] Field
     And Selects [Search] Button
