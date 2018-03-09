@@ -10,12 +10,12 @@ Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 Check for presence of page elements
-    [Tags]  [JIRA: EM-299]
+    [Tags]  [JIRA: EM-299]  Regression
     Given user is on [NOMIS]
     Then Check [T's and C's link] is present
 
 Scenario 2: Check T's & C's Link
-    [Tags]  [JIRA: EM-299]
+    [Tags]  [JIRA: EM-299] Regression
     Given user is on [NOMIS]
     And Check [T's and C's link] is present
     When user selects [T's and C's link]
