@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3462538a-3722-4353-a16d-f583199b0d5e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Resources/Common.robot" afterPath="$PROJECT_DIR$/Resources/Common.robot" />
       <change beforePath="$PROJECT_DIR$/Resources/PO/FooterLinkValidation.robot" afterPath="$PROJECT_DIR$/Resources/PO/FooterLinkValidation.robot" />
       <change beforePath="$PROJECT_DIR$/Resources/PO/LoginPage.robot" afterPath="$PROJECT_DIR$/Resources/PO/LoginPage.robot" />
       <change beforePath="$PROJECT_DIR$/Resources/PO/Toolbar.robot" afterPath="$PROJECT_DIR$/Resources/PO/Toolbar.robot" />
@@ -312,13 +311,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515676058621</updated>
-    </task>
-    <task id="LOCAL-00073" summary="circleci config">
-      <created>1517245840598</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1517245840598</updated>
     </task>
     <task id="LOCAL-00074" summary="report output config">
       <created>1517331393615</created>
@@ -656,7 +648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520610760996</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Changed from chrome to Firefox">
+      <created>1520610879328</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1520610879328</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -722,7 +721,8 @@
     <MESSAGE value="Added Amend [Case Note] tests" />
     <MESSAGE value="Added [Logout] tests" />
     <MESSAGE value="Amended README file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Amended README file" />
+    <MESSAGE value="Changed from chrome to Firefox" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed from chrome to Firefox" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
